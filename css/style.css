@@ -1,0 +1,270 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #FF5100;
+    /* box-shadow:  6px 6px 7px #532510, -6px -6px 7px #bd5524; */
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* Small */
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* Start Header */
+.background {
+    background-image: url(../imgs/wp9969906-90s-movie-poster-4k-wallpapers.jpg);
+    background-size: cover;
+    position: sticky;
+    width: 100%;
+    height: 100%;
+}
+.background::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 55%);
+}
+@media (max-width: 740px) {
+    .background {
+        background-color: black;
+        background-image: none;
+    }
+}
+header {
+    padding-top: 30px;
+    margin: 0 30px;
+    position: relative;
+}
+header img {
+    width: 180px;
+}
+@media (max-width: 740px) {
+    header {
+        padding-top: 17px;
+        margin: 0 12px;
+    }
+    header img {
+        width: 115px;
+    }
+}
+.sign-in {
+    padding: 57px 15px;
+    position: relative;
+    border: 2px solid rgb(0 0 0 / 75%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 24em;
+    margin: auto;
+    background-color: rgb(0 0 0 / 75%);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 100px;
+}
+@media (max-width: 740px) {
+    .sign-in {
+    background-color: black;
+    padding: 0 0;
+    width: 91%;
+    }
+}
+.sign-in h2 {
+    color: var(--main-color);
+    font-size: 40px;
+    font-weight: bold
+}
+@media (max-width: 740px) {
+    .sign-in form {
+    width: 100%;
+    }
+    .sign-in h2 {
+        font-size: 35px;
+    }
+}
+.sign-in form input[type="email"]::placeholder,
+.sign-in form input[type="password"]::placeholder {
+    transition: opacity 0.3s;
+    color: #8c8c8c;
+}
+.sign-in form input[type="email"]:focus,
+.sign-in form input[type="password"]:focus {
+    outline: none;
+}
+.sign-in form input[type="email"]:focus::placeholder,
+.sign-in form input[type="password"]:focus::placeholder {
+    opacity: 0;
+}
+.sign-in form input[type="email"],
+.sign-in form input[type="password"] {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 20px 0;
+    flex: 1;
+    background-color: #333;
+    caret-color: var(--main-color);
+}
+@media (max-width: 740px) {
+    .sign-in form input[type="email"],
+    .sign-in form input[type="password"] {
+    width: 100%;
+    }
+}
+.sign-in .checkbox {
+    box-sizing: border-box;
+    font-size: 16px;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.sign-in .checkbox input[type="checkbox"] {
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+}
+.sign-in .checkbox label {
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 400;
+}
+.sign-in .enter {
+    font-size: 21px;
+    background-color: var(--main-color);
+    font-weight: bold;
+    color: black;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    width: 16em;
+    padding: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+@media (max-width: 740px) {
+    .sign-in .enter {
+    width: 100%;
+    }
+}
+.sign-in .enter:hover {
+    background-color: #bd5524;
+    border-color: #bd5524;
+}
+.sign-in .pra {
+    margin: 50px;
+    color: #b3b3b3;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 300;
+}
+.sign-in .pra a {
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+.background .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+@media (max-width: 740px) {
+    .footer {
+        border-top: 2px solid #b3b3b3;
+    }
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+}
+.footer .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 100px;
+}
+@media (max-width: 740px) {
+    .footer .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+    }
+}
+.footer .links {
+    position: relative;
+}
+.footer .links li {
+    margin-top: 50px;
+}
+.footer .links a {
+    color: #8c8c8c;
+    font-weight: 400;
+    font-size: 14px;
+}
+.footer .social {
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .social i {
+    color: #8c8c8c;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.footer .social .fb:hover {
+    color: #3578E5;
+}
+.footer .social .twit:hover {
+    color: rgb(29, 155, 240);;
+}
+.footer .social .in:hover{
+    color: #0a66c2;
+}
+.footer .social .ig:hover {
+    color: #E4405F;
+}
+/* End Header */
