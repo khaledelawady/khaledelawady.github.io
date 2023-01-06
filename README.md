@@ -1,2 +1,0 @@
-# NETGRID 🧡
-# HTML & CSS 
