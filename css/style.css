@@ -298,7 +298,7 @@ main {
 .contact .social img:hover {
     filter: grayscale();
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .contact .social img {
         width: 100px;
     }
