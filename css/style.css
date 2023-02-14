@@ -101,9 +101,9 @@ ul {
     overflow: hidden;
 }
 @media (max-width:768px) {
-  .links a {
-      display: none;
-  }
+    .links a {
+        display: none;
+    }
 }
 .landing a:hover::before {
     width: 100%;
@@ -297,6 +297,11 @@ main {
 }
 .contact .social img:hover {
     filter: grayscale();
+}
+@media (max-width:768px) {
+    .contact .social img {
+        width: 100px;
+    }
 }
 .contact .mail {
     text-align: center;
