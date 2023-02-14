@@ -4,569 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netgrid</title>
-    <link rel="website icon" type="png" href="imgs/netgrid-website-favicon-color.png">
-    <!-- All Min Style -->
-    <link href="css/all.min.css" rel="stylesheet" />
-    <!-- Normalize Style -->
-    <link href="css/normalize.css" rel="stylesheet" />
-    <!-- Main Style -->
-    <link href="css/main.style.css" rel="stylesheet" />
-    <!-- Google Font  -->
+    <!-- web icon -->
+    <link rel="website icon" type="png" href="images/k-high-resolution-logo-color-on-transparent-background.png">
+    <title>Khaled Elawady</title>
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- headroom -->
+    <script src="https://unpkg.com/headroom.js"></script>
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Start Header -->
-    <div class="background">
-        <div class="header" id="header">
+    <!-- start landing -->
+    <div class="landing" id="landing">
+        <!-- start header -->
+        <header class="" >
             <div class="container">
                 <div class="logo">
-                    <img src="imgs/netgrid-high-resolution-logo-color-on-transparent-background.png" alt="" class="full"/>
-                    <img src="imgs/netgrid-website-favicon-color.png" alt="" class="activ" />
+                    <a href="#landing">
+                        <img src="images/k-high-resolution-logo-color-on-transparent-background.png" alt="">
+                    </a>
                 </div>
-                <div class="links">
-                    <ul>
-                        <li><a href="#header" class="active">Home</a></li>
-                        <li><a href="#movies">Movies</a></li>
-                        <li><a href="#series">Series</a></li>
-                        <li><a href="#anime">Anime</a></li>
-                        <li><a href="#popular">New & Popular</a></li>
+                <nav>
+                    <ul class="links">
+                        <li><a class="abo" href="#about"  data-text="About">About</a></li>
+                        <li><a class="cont" href="#contact" data-text="Contact">Contact</a></li>
                     </ul>
-                </div>
-                <a href="https://khaledelawady.github.io/sign.html" class="enter">Sign In</a>
+                </nav>
             </div>
+        </header>
+        <!-- end header -->
+        <div class="heading-text">
+            <h3 class="rise">hey, <br> my name is <span class="rise-khaled"> khaled </span></h3>
         </div>
     </div>
-    <!-- End Header -->
-    <!-- Start Landing -->
-    <div class="landing">
+    <!-- end landing -->
+    <!-- start about -->
+    <main>
+        <section class="about" id="about">
+            <div class="container">
+                <h3>Who Is Khaled ?</h3>
+                <p>Khaled Elawady That Is My Name, I'm Front-End Developer / Web Deverloper, Egypt Is My Country, My collage Is Abour Intstitutes Studing Information System</p>
+                <a href="project.html" class="project"><span></span><span></span><span></span><span></span> Projects / Skills</a>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/khaled-elawady-9a38b8256"><img src="svg/in.svg" alt=""></a>
+                    <a href="https://www.instagram.com/0_khalid_hassan_0/"><img src="svg/insta.svg" alt=""></a>
+                    <a href="https://twitter.com/khaled_elawady_"><img src="svg/twet.svg" alt=""></a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:abo.amar361@yahoo.com?subject=Hello, Elawady">Quick Message</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
         <div class="container">
-            <div class="content">
-                <h1><span> Watch</span> Your Movie</h1>
-                <p>Enjoy your movie without ad and free by perfect quality and you can download any thing, Have fun </p>
-                <a href="#popular" class="suggest">New ?</a>
-            </div>
-            <div class="boxs">
-                <a href="#popular-movies" class="box">
-                    <i class="fa-solid fa-film"></i>
-                    <h3>Movies</h3>
-                </a>
-                <a href="#popular-series" class="box">
-                    <i class="fa-solid fa-strikethrough"></i>
-                    <h3>Series</h3>
-                </a>
-                <a href="#popular-animes" class="box">
-                    <i class="fa-solid fa-dove"></i>
-                    <h3>Anime</h3>
-                </a>
-            </div>
+            <h4>©2023</h4>
         </div>
-    </div>
-    <!-- End Landing -->
-    <!-- start Movies -->
-    <div class="movies" id="movies">
-        <div class="main-title">
-            <img src="imgs/netgrid-website-favicon-color.png" alt="" >
-            <h2>Movies</h2>
-        </div>
-        <div class="overlay"></div>
-            <div class="content">
-                <img src="imgs/wp9268747-the-conjuring-4k-wallpapers.jpg" alt="" class="active">
-                <h3>The Conjuring (2013)</h3>
-                <strong><span>112m</span><span>+16</span><span>Horror Movies</span></strong>
-                <p>
-                    After moving into a Rhode Island farmhouse, a family experiences supernatural occurrences and seeks help from a pair of noted paranormal investigators.
-                </p>
-                <div class="links">
-                    <div class="link play">
-                        <i class="fa-solid fa-play"></i>
-                        <a href="#">Play</a>
-                    </div>
-                    <div class="link more">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <a href="#">More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="other">
-                <h3>More</h3>
-                <div class="images">
-                    <a href="#"><img src="imgs/Movies (1).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/Movies (2).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/Movies (7).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/Movies (4).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/Movies (5).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/Movies (6).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/Movies (3).jpg" alt="" class="hide"></a>
-                </div>
-            </div>
-    </div>
-    <!-- End Movies -->
-    <!-- start series -->
-    <div class="series" id="series">
-        <div class="main-title">
-            <img src="imgs/netgrid-website-favicon-color.png" alt="" >
-            <h2>Series</h2>
-        </div>
-        <div class="overlay"></div>
-            <div class="content">
-                <img src="imgs/wp2156334-breaking-bad-poster-4k-wallpapers.jpg" alt="" class="active">
-                <h3>Breaking Bad (2008)</h3>
-                <strong><span>5 Seasons</span><span>+18</span><span>Crime Series</span></strong>
-                <p>
-                    A high school chemistry teacher dying of cancer teams with a former student to secure his family's future by manufacturing and selling crystal meth.
-                </p>
-                <div class="links">
-                    <div class="link play">
-                        <i class="fa-solid fa-play"></i>
-                        <a href="#">Play</a>
-                    </div>
-                    <div class="link more">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <a href="#">More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="moree">
-                <h3>More</h3>
-                <div class="images">
-                    <a href="#"><img src="imgs/series (1).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/series (2).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/series (3).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/series (4).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/series (5).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/series (6).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/series (7).jpg" alt="" class="hide"></a>
-                </div>
-            </div>
-    </div>
-    <!-- End Series -->
-    <!-- start anime -->
-    <div class="anime" id="anime">
-        <div class="main-title">
-            <img src="imgs/netgrid-website-favicon-color.png" alt="" >
-            <h2>Anime</h2>
-        </div>
-        <div class="overlay"></div>
-            <div class="content">
-                <img src="imgs/wp11151091-one-piece-neon-wallpapers.png" alt="" class="active">
-                <h3>One Piece (1999)</h3>
-                <strong><span>+1000EP</span><span>+16</span><span>Anime Series</span></strong>
-                <p>
-                    Follows the adventures of Monkey D. Luffy and his pirate crew in order to find the greatest treasure ever left by the legendary Pirate, Gold Roger. The famous mystery treasure named "One Piece".
-                </p>
-                <div class="links">
-                    <div class="link play">
-                        <i class="fa-solid fa-play"></i>
-                        <a href="#">Play</a>
-                    </div>
-                    <div class="link more">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <a href="#">More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="moree">
-                <h3>More</h3>
-                <div class="images">
-                    <a href="#"><img src="imgs/anime (1).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/anime (2).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/anime (2).png" alt=""></a>
-                    <a href="#"><img src="imgs/anime (4).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/anime (5).jpg" alt=""></a>
-                    <a href="#"><img src="imgs/anime (1).png" alt=""></a>
-                    <a href="#"><img src="imgs/anime (7).jpg" alt="" class="hide"></a>
-                </div>
-            </div>
-    </div>
-    <!-- End Anime -->
-    <!-- Start popular-->
-    <div class="popular" id="popular">
-        <div class="main-title">
-            <img src="imgs/netgrid-website-favicon-color.png" alt="" >
-            <h2>New & Popular</h2>
-        </div>
-        <div class="container">
-            <div class="row" id="popular-movies">
-                <h2>Popular Movies</h2>
-                <div class="box">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/Popular 2 (1).jfif" alt="">
-                        <h3>Aline</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (15).jfif" alt="">
-                        <h3>Joker</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (2).jfif" alt="">
-                        <h3>The Gray Man</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (3).jfif" alt="">
-                        <h3>Rocky</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (4).jfif" alt="">
-                        <h3>Scarface</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (5).jfif" alt="">
-                        <h3>Top Gun</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (6).jfif" alt="">
-                        <h3>Baby Driver</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (7).jfif" alt="">
-                        <h3>Batman</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (8).jfif" alt="">
-                        <h3>Django Unchained</h3>
-                        <i class="fas fa-angle-right change-background fa-2x  right"></i>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/Popular 2 (9).jfif" alt="">
-                        <h3>The Maze Runner</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (20).jfif" alt="">
-                        <h3>The Thing</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (11).jfif" alt="">
-                        <h3>Fight Club</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (12).jfif" alt="">
-                        <h3>Sabrina Part Two</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (13).jfif" alt="">
-                        <h3>In The Heart Of THe Sea</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (14).jfif" alt="">
-                        <h3>No Time To Die</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (16).jfif" alt="">
-                        <h3>Leon</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (17).jfif" alt="">
-                        <h3>Locked</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (18).jfif" alt="">
-                        <h3>Doctor Strange</h3>
-                        <i class="fas fa-angle-right change-background fa-2x right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row" id="popular-series">
-                <h2>Popular Series</h2>
-                <div class="box">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/Popular 3 (9).jfif" alt="">
-                        <h3>His Dark Materials</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (8).jfif" alt="">
-                        <h3>Stranger Things</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (7).jfif" alt="">
-                        <h3>The Queen`s Gambit</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/The Boys Season 2.jfif" alt="">
-                        <h3>The Boys</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (4).jfif" alt="">
-                        <h3>Peaky Blinders</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (3).png" alt="">
-                        <h3>Altamar</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (2).png" alt="">
-                        <h3>Ginny & Georgia</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (1).png" alt="">
-                        <h3>Brooklyn Nine-Nine</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (1).jfif" alt="">
-                        <h3>The 100</h3>
-                        <i class="fas fa-angle-right change-background fa-2x  right"></i>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/First Look_ 'Lucifer's Red Hot Season 2 Poster.jfif" alt="">
-                        <h3>Lucifer</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 3 (2).jfif" alt="">
-                        <h3>Dark</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/60 Shows You Should Already Be Binge Watching.jfif" alt="">
-                        <h3>Breaking Bad</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Dexter - We all have a dark side.jfif" alt="">
-                        <h3>Dexter</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Hannibal.jfif" alt="">
-                        <h3>Hannibal</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/GHOUL.jfif" alt="">
-                        <h3>GHOUL</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/The Walking Dead (2010).jfif" alt="">
-                        <h3>The Walking Dead</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/The Witcher Netflix TV Series Poster.jfif" alt="">
-                        <h3>The Witcher</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Mr_ Robot.jfif" alt="">
-                        <h3>Mr.Robot</h3>
-                        <i class="fas fa-angle-right change-background fa-2x right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row" id="popular-animes">
-                <h2>Popular Animes</h2>
-                <div class="box">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/popular (1).jfif" alt="">
-                        <h3>Attack On Titan</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (1).png" alt="">
-                        <h3>Kimetsu no Yaiba</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular 2.jpg" alt="">
-                        <h3>Hellsing</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (3).jfif" alt="">
-                        <h3>Death Note</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (4).jfif" alt="">
-                        <h3>Haikyuu!!</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (5).jfif" alt="">
-                        <h3>Naruto Shippuden</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (6).jfif" alt="">
-                        <h3>Mob Psycho 100</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (7).jfif" alt="">
-                        <h3>Naruto</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (8).jfif" alt="">
-                        <h3>Corpse Bride</h3>
-                        <i class="fas fa-angle-right change-background fa-2x  right"></i>
-                    </a>
-                </div>
-                <div class="box">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/popular (4).jpg" alt="">
-                        <h3>Berserk</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (11).jfif" alt="">
-                        <h3>Hunter X Hunter</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (10).jfif" alt="">
-                        <h3>The Nutcracker And The Four Realms</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (9).jfif" alt="">
-                        <h3>Spy X Family</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular 3.png" alt="">
-                        <h3>Tokyo Ghoul</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/poplar 3.jpg" alt="">
-                        <h3>Baki</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (4).png" alt="">
-                        <h3>Jujutsu Kaisen</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (3).jpg" alt="">
-                        <h3>One Piece</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/popular (1).jpg" alt="">
-                        <h3>Hajime No Ippo</h3>
-                        <i class="fas fa-angle-right change-background fa-2x right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row end">
-                <h2>More</h2>
-                <i class="fa-solid fa-angle-down down"></i>
-                <div class="box show">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/Popular 2 (1).jfif" alt="">
-                        <h3>Aline</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (15).jfif" alt="">
-                        <h3>Joker</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (2).jfif" alt="">
-                        <h3>The Gray Man</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (3).jfif" alt="">
-                        <h3>Rocky</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (4).jfif" alt="">
-                        <h3>Scarface</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (5).jfif" alt="">
-                        <h3>Top Gun</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (6).jfif" alt="">
-                        <h3>Baby Driver</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (7).jfif" alt="">
-                        <h3>Batman</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (8).jfif" alt="">
-                        <h3>Django Unchained</h3>
-                        <i class="fas fa-angle-right change-background fa-2x  right"></i>
-                    </a>
-                </div>
-                <div class="box blur">
-                    <a href="">
-                        <i class="fas fa-angle-left change-background fa-2x left"></i>
-                        <img src="imgs/Popular 2 (9).jfif" alt="">
-                        <h3>The Maze Runner</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (20).jfif" alt="">
-                        <h3>The Thing</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (11).jfif" alt="">
-                        <h3>Fight Club</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (12).jfif" alt="">
-                        <h3>Sabrina Part Two</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (13).jfif" alt="">
-                        <h3>In The Heart Of THe Sea</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (14).jfif" alt="">
-                        <h3>No Time To Die</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (16).jfif" alt="">
-                        <h3>Leon</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (17).jfif" alt="">
-                        <h3>Locked</h3>
-                    </a>
-                    <a href="">
-                        <img src="imgs/Popular 2 (18).jfif" alt="">
-                        <h3>Doctor Strange</h3>
-                        <i class="fas fa-angle-right change-background fa-2x right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End popular-->
-    <!-- Start Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="links">
-                <ul>
-                    <li><a href="#">Qustions? Contact Us.</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Cookie Preferences</a></li>
-                </ul>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Corporate Information</a></li>
-                </ul>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">Terms of Use</a></li>
-                </ul>
-            </div>
-            <div class="links">
-                <ul>
-                    <li><a href="#">Privacy</a></li>
-                </ul>
-            </div>
-            <div class="social">
-                <a href="#header">
-                    <i class="fb fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="#header">
-                    <i class="twit fa-brands fa-twitter"></i>
-                </a>
-                <a href="#header">
-                    <i class="in fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#header">
-                    <i class="ig fa-brands fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- End Footer -->
+    </footer>
+    <script>
+        var myElement = document.querySelector("header");
+    // construct an instance of Headroom, passing the element
+    var headroom  = new Headroom(myElement);
+    // initialise
+    headroom.init();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+    <!-- end about -->
 </body>
 </html>
