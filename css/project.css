@@ -15,7 +15,7 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: hsl(0, 0%, 12%);
+  background-color: var(--dark-color);
   color: hsl(0, 0%, 100%);
 }
 a {
@@ -108,7 +108,7 @@ main .project .card {
   border-radius: 15px;
   text-align: center;
   box-shadow: 1px 5px 16px 1px black;
-  background-color: #043F98;
+  background-color: #bc2666;
 }
 main .project .card .image img {
   width: 100%;
@@ -132,8 +132,8 @@ main .project .card .info p {
 }
 main .project .card .demo a {
   padding: 11px 20px;
-  background-color: var(--scondry-color);
-  color: black;
+  background-color: var(--dark-color);
+  color: var(--paragraph-color);
   font-weight: 700;
   border-radius: 4px;
   letter-spacing: 1px;
@@ -144,11 +144,12 @@ main .project .card .demo a:hover {
   color: var(--scondry-color);
 }
 main .project .card .tag-language {
-  border-top: 1px solid var(--main-color);
+  border-top: 1px solid #f6d7d6;
   padding: 30px;
 }
 main .project .card .tag-language span {
   padding: 5px 10px;
-  color: var(--main-color);
+  color: #9CDEEB;
   letter-spacing: 1px;
+  font-weight: 700;
 }
