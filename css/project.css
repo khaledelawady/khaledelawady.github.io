@@ -1,0 +1,154 @@
+/* start global ruls */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --main-color: #66bef9;
+  --scondry-color: #309af1;
+  --paragraph-color: #767676;
+  --dark-color: #050307;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global ruls */
+/* start landing */
+header {
+  padding: 20px 0;
+  position: relative;
+}
+header .container {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo img {
+  width: 150px;
+}
+header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--scondry-color);
+}
+/*  */
+main {
+    position: relative;
+    padding: 50px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+main .head-text {
+  text-align: center;
+}
+main .head-text h3 {
+  font-size: 26px;
+  color: var(--main-color);
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+main .head-text p {
+  color: var(--scondry-color);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 500;
+}
+main .project .card {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 1px 5px 16px 1px black;
+  background-color: #043F98;
+}
+main .project .card .image img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+main .project .card .info {
+  padding: 0 20px;
+}
+main .project .card .info h4 {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+main .project .card .info p {
+  margin-top: 20px;
+  color: #ccc;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+main .project .card .demo a {
+  padding: 11px 20px;
+  background-color: var(--scondry-color);
+  color: black;
+  font-weight: 700;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+main .project .card .demo a:hover {
+  background-color: black;
+  color: var(--scondry-color);
+}
+main .project .card .tag-language {
+  border-top: 1px solid var(--main-color);
+  padding: 30px;
+}
+main .project .card .tag-language span {
+  padding: 5px 10px;
+  color: var(--main-color);
+  letter-spacing: 1px;
+}
