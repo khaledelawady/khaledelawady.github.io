@@ -17,6 +17,8 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--dark-color);
   color: hsl(0, 0%, 100%);
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
 }
 a {
   text-decoration: none;
@@ -98,6 +100,17 @@ main .head-text p {
   font-size: 16px;
   font-weight: 500;
 }
+main .project .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  main .project .container {
+    display: grid;
+    grid-template-columns: none;
+    gap: 60px;
+  }
+}
 main .project .card {
   position: relative;
   width: 300px;
@@ -108,7 +121,12 @@ main .project .card {
   border-radius: 15px;
   text-align: center;
   box-shadow: 1px 5px 16px 1px black;
-  background-color: #bc2666;
+}
+main .project .card.sign-up {
+  background-color: #bc2666; 
+}
+main .project .card.kasper {
+  background-color: #1165c1; 
 }
 main .project .card .image img {
   width: 100%;
