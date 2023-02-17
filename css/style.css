@@ -181,12 +181,16 @@ main {
     display: inline-block;
     padding: 10px 20px;
     color: var(--main-color);
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: 18px;
     overflow: hidden;
     transition: 0.5s;
     margin-top: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.about .project:hover {
+    background-color: #309AF1;
+    color: black;
 }
 .about .project span {
     position: absolute;
