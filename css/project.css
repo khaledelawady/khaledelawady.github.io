@@ -102,7 +102,7 @@ main .head-text p {
 }
 main .project .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 @media (max-width: 768px) {
   main .project .container {
@@ -127,6 +127,9 @@ main .project .card.sign-up {
 }
 main .project .card.kasper {
   background-color: #1165c1; 
+}
+main .project .card.blog {
+  background-color: #151515;
 }
 main .project .card .image img {
   width: 100%;
