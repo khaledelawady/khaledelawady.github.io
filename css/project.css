@@ -9,6 +9,9 @@
   --scondry-color: #309af1;
   --paragraph-color: #767676;
   --dark-color: #050307;
+  --html-color: #f44336;
+  --css-color: #0b93ff;
+  --js-color: rgb(247, 223, 30);
 }
 html {
   scroll-behavior: smooth;
@@ -65,7 +68,7 @@ header .logo img {
   width: 150px;
 }
 header::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -75,13 +78,13 @@ header::before {
 }
 /*  */
 main {
-    position: relative;
-    padding: 50px 0;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
+  position: relative;
+  padding: 50px 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
 }
 main .head-text {
   text-align: center;
@@ -99,6 +102,19 @@ main .head-text p {
   letter-spacing: 2px;
   font-size: 16px;
   font-weight: 500;
+}
+main .project {
+  position: relative;
+  padding: 50px 0;
+}
+main .project::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--scondry-color);
 }
 main .project .container {
   display: grid;
@@ -124,16 +140,34 @@ main .project .card {
   box-shadow: 1px 5px 16px 1px black;
 }
 main .project .card.sign-up {
-  background-color: #bc2666; 
+  background-color: #bc2666;
 }
 main .project .card.kasper {
-  background-color: #1165c1; 
+  background-color: #1165c1;
 }
 main .project .card.blog {
-  background-color: #151515; 
+  background-color: #151515;
 }
 main .project .card.landing-one {
-  background-color: #398378; 
+  background-color: #398378;
+}
+main .project .card.landing-two {
+  background-color: #210535;
+}
+main .project .card.kitchen {
+  background-color: rgb(247, 223, 30);
+}
+main .project .card.kitchen h4 {
+  color: #050307;
+}
+main .project .card.kitchen .info p {
+  color: #767676;
+}
+main .project .card.kitchen .tag-language {
+  border-color: #050307;
+}
+main .project .card.kitchen .tag-language span {
+  color: #767676;
 }
 main .project .card .image img {
   width: 100%;
@@ -174,7 +208,57 @@ main .project .card .tag-language {
 }
 main .project .card .tag-language span {
   padding: 5px 10px;
-  color: #9CDEEB;
+  color: #9cdeeb;
   letter-spacing: 1px;
   font-weight: 700;
+}
+main .skills {
+  position: relative;
+  padding: 50px 0;
+}
+main .skills .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+main .skills .skill {
+  position: relative;
+  text-align: center;
+}
+main .skills .skill h3 {
+  position: relative;
+  font-size: 50px;
+  margin: auto;
+  width: fit-content;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px var(--main-color);
+  transition: 0.3s;
+}
+main .skills .skill h3::before {
+  content: attr(data-stroke);
+  position: absolute;
+  left: 0;
+  -webkit-text-fill-color: var(--html-color);
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+main .skills .skill h3:hover::before {
+  width: 100%;
+  filter: drop-shadow(2px 4px 6px var(--html-color));
+  -webkit-text-stroke: var(--html-color);
+}
+main .skills .css h3::before {
+  -webkit-text-fill-color: var(--css-color);
+}
+main .skills .css h3:hover::before {
+  filter: drop-shadow(2px 4px 6px var(--css-color));
+  -webkit-text-stroke: var(--css-color);
+}
+main .skills .js h3::before {
+  -webkit-text-fill-color: var(--js-color);
+}
+main .skills .js h3:hover::before {
+  filter: drop-shadow(2px 4px 6px var(--js-color));
+  -webkit-text-stroke: var(--js-color);
 }
