@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="../images/k-high-resolution-logo-color-on-transparent-background.png">
+    <title>JS PAGE</title>
+    <script src="https://unpkg.com/headroom.js"></script>
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="product">
+        <div class="image-box" data-reveal="left">
+            <img src="imags/chicken.jpg" alt="" class="img">
+        </div>
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                Chicken
+            </h2>
+            <p class="text" data-reveal="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum iste doloremque ab facere unde alias
+                sit commodi accusamus? Eius ut molestiae nemo perspiciatis.
+            </p>
+            <a href="#" class="order-now" data-reveal="left">Order Now !</a>
+        </div>
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                Chicken Soup
+            </h2>
+            <p class="text" data-reveal="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum iste doloremque ab facere unde alias
+                sit commodi accusamus? Eius ut molestiae nemo perspiciatis.
+            </p>
+            <a href="#" class="order-now" data-reveal="left">Order Now !</a>
+        </div>
+        <div class="image-box" data-reveal="left">
+            <img src="imags/chicken-soup.jpg" alt="" class="img">
+        </div>
+        <div class="image-box" data-reveal="left">
+            <img src="imags/disart.jpg" alt="" class="img">
+        </div>
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                Disaster
+            </h2>
+            <p class="text" data-reveal="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum iste doloremque ab facere unde alias
+                sit commodi accusamus? Eius ut molestiae nemo perspiciatis.
+            </p>
+            <a href="#" class="order-now" data-reveal="left">Order Now !</a>
+        </div>
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                Coffee
+            </h2>
+            <p class="text" data-reveal="left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum iste doloremque ab facere unde alias
+                sit commodi accusamus? Eius ut molestiae nemo perspiciatis.
+            </p>
+            <a href="#" class="order-now" data-reveal="left">Order Now !</a>
+        </div>
+        <div class="image-box" data-reveal="left">
+            <img src="imags/coffee.jpg" alt="" class="img">
+        </div>
+    </section>
+    <script src="js/product.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var myElement = document.querySelector(".nav-bar");
+        // construct an instance of Headroom, passing the element
+        var headroom = new Headroom(myElement);
+        // initialise
+        headroom.init();
+    </script>
+</body>
+
+</html>
