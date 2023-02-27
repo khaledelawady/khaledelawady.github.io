@@ -17,11 +17,10 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   background-color: var(--dark-color);
   color: hsl(0, 0%, 100%);
-  background-image: url(../images/landing.jpg);
-  background-size: cover;
 }
 a {
   text-decoration: none;
@@ -32,6 +31,14 @@ ul {
 .container {
   padding: 0 15px;
   margin: auto;
+}
+
+.stars {
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
 }
 /* Small */
 @media (min-width: 768px) {
@@ -121,6 +128,13 @@ main .project .container {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 }
+@media (max-width: 1075px) {
+  main .project .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
 @media (max-width: 768px) {
   main .project .container {
     display: grid;
@@ -158,16 +172,16 @@ main .project .card.kitchen {
   background-color: rgb(247, 223, 30);
 }
 main .project .card.kitchen h4 {
-  color: #050307;
+  color: var(--dark-color);
 }
 main .project .card.kitchen .info p {
   color: #767676;
 }
 main .project .card.kitchen .tag-language {
-  border-color: #050307;
+  border-color: var(--dark-color);
 }
 main .project .card.kitchen .tag-language span {
-  color: #767676;
+  color: var(--dark-color);
 }
 main .project .card .image img {
   width: 100%;
@@ -215,6 +229,11 @@ main .project .card .tag-language span {
 main .skills {
   position: relative;
   padding: 50px 0;
+}
+@media (max-width: 768px) {
+  main .skills {
+    display: none;
+  }
 }
 main .skills .container {
   display: grid;
