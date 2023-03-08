@@ -12,6 +12,7 @@
   --html-color: #f44336;
   --css-color: #0b93ff;
   --js-color: rgb(247, 223, 30);
+  --bootstp-color: #7611f6;
 }
 html {
   scroll-behavior: smooth;
@@ -183,6 +184,21 @@ main .project .card.kitchen .tag-language {
 main .project .card.kitchen .tag-language span {
   color: var(--dark-color);
 }
+main .project .card.restaurant {
+  background-color: #eae5d9;
+}
+main .project .card.card.restaurant h4 {
+  color: var(--dark-color);
+}
+main .project .card.card.restaurant .info p {
+  color: #767676;
+}
+main .project .card.card.restaurant .tag-language {
+  border-color: var(--dark-color);
+}
+main .project .card.card.restaurant .tag-language span {
+  color: var(--dark-color);
+}
 main .project .card .image img {
   width: 100%;
   border-top-right-radius: 15px;
@@ -280,4 +296,11 @@ main .skills .js h3::before {
 main .skills .js h3:hover::before {
   filter: drop-shadow(2px 4px 6px var(--js-color));
   -webkit-text-stroke: var(--js-color);
+}
+main .skills .botstp h3::before {
+  -webkit-text-fill-color: var(--bootstp-color);
+}
+main .skills .botstp h3:hover::before {
+  filter: drop-shadow(2px 4px 6px var(--bootstp-color));
+  -webkit-text-stroke: var(--bootstp-color);
 }
