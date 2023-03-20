@@ -13,6 +13,7 @@
   --css-color: #0b93ff;
   --js-color: rgb(247, 223, 30);
   --bootstp-color: #7611f6;
+  --tailwind-color: #38bdf8;
 }
 html {
   scroll-behavior: smooth;
@@ -192,6 +193,9 @@ main .project .card.card.restaurant .tag-language {
 main .project .card.card.restaurant .tag-language span {
   color: var(--dark-color);
 }
+main .project .card.card.landing-three {
+  background-color: #ff0303cb;
+}
 main .project .card .image img {
   width: 100%;
   border-top-right-radius: 15px;
@@ -296,4 +300,11 @@ main .skills .botstp h3::before {
 main .skills .botstp h3:hover::before {
   filter: drop-shadow(2px 4px 6px var(--bootstp-color));
   -webkit-text-stroke: var(--bootstp-color);
+}
+main .skills .tailwind h3::before {
+  -webkit-text-fill-color: var(--tailwind-color);
+}
+main .skills .tailwind h3:hover::before {
+  filter: drop-shadow(2px 4px 6px var(--tailwind-color));
+  -webkit-text-stroke: var(--tailwind-color);
 }
