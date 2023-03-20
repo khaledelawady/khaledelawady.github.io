@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="website icon" type="png" href="../images/k-high-resolution-logo-color-on-transparent-background.png">
+        <title>Css Tailwind</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode : 'class',
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: '#da373d',
+                        }
+                    }
+                }
+            }
+        </script>
+        <script src="tailwind.config.js"></script>
+        <script>
+            // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark')
+            }
+        </script>
+    </head>
+    <style>
+        .drop-shadow-darks {
+            filter: drop-shadow(2px 4px 6px black);
+            z-index: -1;
+        }
+        .drop-shadow-white {
+            filter: drop-shadow(2px 4px 6px white) !important;
+            z-index: -1;
+        }
+        .actives::before {
+            left: 0 !important;
+            width: 100% !important;
+        }
+        .active {
+            color: #767676;
+        }
+        .brand {
+            animation: moving 4s infinite linear forwards;
+        }
+        @keyframes moving {
+            50% {
+                transform: translate(0px, 10px);
+            }
+            75% {
+                transform: translate(-10px, 0px);
+            }
+            100% {
+                transform: translate(0);
+            }
+        }
+    </style>
+<body class="bg-white dark:bg-black dark:text-white">
+    <nav class="navbar py-6 z-1">
+        <div class="container mx-auto relative">
+            <ul class="links flex gap-14 items-center max-lg:gap-8 max-md:invisible relative max-md:block">
+                <li
+                    class="relative before:duration-700 before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-1 before:bg-red-700 hover:before:left-0 hover:before:w-full">
+                    <a class="text-lg font-semibold duration-500 hover:text-slate-700" href="#">WOMAN</a></li>
+                <li
+                    class="relative before:duration-700 before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-1 before:bg-red-700 hover:before:left-0 hover:before:w-full">
+                    <a class="text-lg font-semibold duration-500 hover:text-slate-700" href="#">MEN</a></li>
+                <li
+                    class="relative before:duration-700 before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-1 before:bg-red-700 hover:before:left-0 hover:before:w-full">
+                    <a class="text-lg font-semibold duration-500 hover:text-slate-700" href="#">KIDS</a></li>
+                <li
+                    class="relative actives before:duration-700 before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-1 before:bg-red-700 hover:before:left-0 hover:before:w-full">
+                    <a class="active text-lg font-semibold duration-500 hover:text-slate-700" href="#">UNISEX</a></li>
+                <li><a class="logo max-md:visible max-md:absolute max-md:top-0 max-md:left-0" href="#"><img src="images/logo.svg"alt="" /></a></li>
+                <li
+                    class="relative before:duration-700 before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-1 before:bg-red-700 hover:before:left-0 hover:before:w-full">
+                    <a class="text-lg duration-500 hover:text-slate-700" href="#">RELASE DATE</a></li>
+                <li
+                    class="relative before:duration-700 before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-1 before:bg-red-700 hover:before:left-0 hover:before:w-full">
+                    <a class="text-lg duration-500 hover:text-slate-700" href="#">SALE</a></li>
+                <!-- <div class="themes w-8">
+                    <img class="sun cursor-pointer" src="./images/sun-solid.svg" alt="">
+                    <img class="moon cursor-pointer" src="./images/moon-solid.svg" alt="">
+                </div> -->
+                <div class="themes max-md:visible max-md:absolute max-md:top-0 max-md:right-0">
+                    <button id="theme-toggle" type="button"
+                        class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="landing py-20 duration-700">
+            <div class="container mx-auto max-md:flex max-md:flex-col-reverse max-md:items-center">
+            <div class="landing-info z-1 max-md:text-center max-md:w-full">
+                <h2 class="text-5xl font-bold">Reebok Nano X2</h2>
+                <h5 class="text-4xl	font-thin text-gray-500">Men's Training Shoes</h5>
+                <div class="rate mt-2 relative flex items-center gap-2 max-md:justify-center">
+                    <i class="fa-solid fa-star text-lg text-red-600"></i>
+                    <i class="fa-solid fa-star text-lg text-red-600"></i>
+                    <i class="fa-solid fa-star text-lg text-red-600"></i>
+                    <i class="fa-solid fa-star text-lg text-red-600 p-1 bg-gray-200 rounded-full"></i>
+                    <i class="fa-regular fa-star fa-star text-red-600 mr-6"></i>
+                    <span class="font-bold mr-4">4.6/5</span>
+                    <span class="text-gray-400">19 votes</span>
+                </div>
+                <div class="price flex items-center mt-10 max-md:justify-center">
+                    <span class="text-5xl font-bold mr-2">$135</span>
+                    <span class="text-xl text-gray-400 relative before:content-[''] before:absolute before:bottom-2 before:left-0 before:w-full before:h-1 before:bg-red-700 before:rotate-45 z-1 ">$150</span>
+                </div>
+                <p class="text-gray-500 mt-10 w-96 max-md:w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                <div class="card pt-10">
+                    <a class="py-2 px-5 bg-red-700 rounded-2xl text-white duration-500 hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white" href="#"><i
+                            class="fa-solid fa-cart-shopping mr-1"></i>ADD TO CART</a>
+                    <a class="py-2 px-5 bg-gray-100 dark:hover:bg-gray-100 rounded-2xl text-gray-700 duration-500 hover:bg-gray-200 hover:text-red-700"
+                        href="#"><i class="fa-solid fa-heart mr-1"></i>save to wishlist</a>
+                </div>
+            </div>
+            <div class="image max-md:text-center">
+                <img class="brand duration-500 absolute top-0 right-0 w-2/4 drop-shadow-white drop-shadow-darks max-md:relative max-md:inline-flex" src="images/landing.svg" alt="">
+            </div>
+            </div>
+        </section>
+    </main>
+        <script src="js/all.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
