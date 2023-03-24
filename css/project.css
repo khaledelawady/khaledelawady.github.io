@@ -196,6 +196,9 @@ main .project .card.card.restaurant .tag-language span {
 main .project .card.card.landing-three {
   background-color: #ff0303cb;
 }
+main .project .card.card.read-me {
+  background-color: #3a0ca3;
+}
 main .project .card .image img {
   width: 100%;
   border-top-right-radius: 15px;
