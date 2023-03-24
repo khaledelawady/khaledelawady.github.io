@@ -9,6 +9,7 @@ window.onscroll = function () {
     const headerOffsetTop = header.offsetTop;
     
     const headerOuterHeight = header.offsetHeight;
+    
     const windowHeight = this.innerHeight;
     
     const windowScrollTop = this.pageYOffset;
