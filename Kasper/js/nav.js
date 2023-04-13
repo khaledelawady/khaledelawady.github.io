@@ -1,28 +1,29 @@
+const menu = document.getElementById("toggle");
+const myUl = document.querySelector(".nav-links");
+menu.onclick = toggleMenu;
 
-const menu = document.querySelector('.toggle-menu');
-const myUl = document.querySelector('ul');
-menu.addEventListener('click', function () {
-    myUl.onclick = myUl.classList.add('mobile-nav');
-    if (myUl.className === "mobile-nav") {
-        menu.addEventListener('click', () => {
-            myUl.classList.remove('mobile-nav'); 
-        })
-    }
-})
+function toggleMenu() {
+  if (myUl.classList.contains("mobile-nav")) {
+    myUl.classList.remove("mobile-nav");
+  } else {
+    myUl.classList.add("mobile-nav");
+  }
+}
 
-const header = document.querySelector('#head');
+// header
+const header = document.querySelector("#head");
 var myElement = document.querySelector(".header");
 window.onscroll = function () {
-    const headOffsetTop = header.offsetTop;
+  const headOffsetTop = header.offsetTop;
 
-    const headOuterHeight = header.offsetHeight;
+  const headOuterHeight = header.offsetHeight;
 
-    const windowHeight = this.innerHeight;
+  const windowHeight = this.innerHeight;
 
-    const windowScrollTop = this.pageYOffset;
+  const windowScrollTop = this.pageYOffset;
 
-    if (windowScrollTop > (headOffsetTop + headOuterHeight - windowHeight)) {
-        myElement.classList.add('actives');
-    }
-}
-window.onc
+  if (windowScrollTop > headOffsetTop + headOuterHeight - windowHeight) {
+    myElement.classList.add("actives");
+  }
+};
+window.onc;
