@@ -18,6 +18,11 @@
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .disable {
+    display: none !important;
+  }
+}
 .nav-bar.headroom--top {
   position: sticky;
   background-color: transparent;
