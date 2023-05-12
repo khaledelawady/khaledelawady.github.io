@@ -127,6 +127,7 @@ function cartDisplay() {
 // search btn
 const searchBtn = document.getElementById("search-btn");
 const searchContent = document.getElementById("search");
+const logo = document.querySelector(".nav-bar-links .logo");
 searchBtn.onclick = searchEvent;
 
 function searchEvent() {
@@ -135,13 +136,18 @@ function searchEvent() {
     navLinks.style.display = "flex";
     searchContent.style.display = "none";
     searchBtn.classList.remove("active");
+    header.style.cssText = "padding: 6px 0;";
+    logo.style.display = "block";
+    toggleMenu.style.display = "none";
   } else {
     navLinks.style.display = "none";
     searchContent.style.display = "block";
     searchBtn.classList.add("active");
+    logo.style.display = "none";
+    header.style.cssText = "padding: 25px 0;";
+    toggleMenu.style.display = "block";
   }
 }
-
 // cart
 const addingCart = document.querySelectorAll(".add-cart");
 const cartImg = document.querySelectorAll(".card .card-img");
