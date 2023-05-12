@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="website icon" type="svg" href="images/logo.svg" />
+    <title>Tech Store</title>
+    <!-- font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="loader">
+      <ul class="bubble">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="open-time">
+          <span class="days"> Mon-Thu: </span>
+          <div class="timer">
+            <span class="clock">9:00 AM - 5:35 PM</span>
+            <span class="icon-arrow">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+            <span class="another-clock">7:00 PM - 2:35 AM</span>
+          </div>
+        </div>
+        <div class="street-contact">
+          <span class="street"
+            >Visit our showroom in 1234 Street Adress City Address, 1234
+            <a href="/contact.htm" class="st-contact"> Contact Us</a></span
+          >
+        </div>
+        <div class="social-media">
+          <span class="phone">call us: (00)1234 5678</span>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="toggle-content"></div>
+        <button class="toggle-menu" id="toggle-menu" data-showen="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-bar-links">
+          <a href="./index.html" class="logo">
+            <img src="images/logo.svg" alt="" class="logo-img" />
+          </a>
+          <ul class="nav-links">
+            <li><a href="#" class="link">Laptops</a></li>
+            <!-- <div class="laptops-menu">
+              <div class="container">
+                <ul class="lap-links">
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+                <div class="brands">
+                  <img src="images/brand-acer.jpg" alt="" class="brand-img" />
+                  <img src="images/brand-adata.svg" alt="" class="brand-img" />
+                  <img src="images/brand-dell.png" alt="" class="brand-img" />
+                  <img src="images/brand-giga.svg" alt="" class="brand-img" />
+                  <img src="images/brand-huawei.jpg" alt="" class="brand-img" />
+                  <img src="images/brand-intel.jpg" alt="" class="brand-img" />
+                  <img src="images/brand-lenovo.png" alt="" class="brand-img" />
+                </div>
+              </div>
+            </div> -->
+            <li><a href="#" class="link">Desktop PCs</a></li>
+            <li><a href="#" class="link">Networking Devices</a></li>
+            <li><a href="#" class="link">Printers & Scanners</a></li>
+            <li><a href="#" class="link">PC Ports</a></li>
+            <li><a href="#" class="link">All Other Products</a></li>
+            <li><a href="#" class="link">Repairs</a></li>
+          </ul>
+          <a href="#" class="our-deals">Our Deals</a>
+        </div>
+        <div class="search">
+          <label for="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search entiere store here..." />
+          </label>
+        </div>
+        <div class="other-tools">
+          <button class="btn-search" id="search-btn">
+            <span></span><span></span>
+          </button>
+          <div class="cart-product">
+            <button class="cart-cancel"><span></span><span></span></button>
+          </div>
+          <div class="overlay"></div>
+          <button class="btn-cart" data-cart="0" id="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="drop-cart" id="drop-cart">
+              <div class="drop-heading">
+                <h4 class="drop-title">My Cart</h4>
+                <span class="drop-count"></span>
+                <a href="#" class="view-cart">View or Edit Your Cart</a>
+              </div>
+              <div class="cart-products"></div>
+              <div class="bounty">
+                <span class="total-money">
+                  subtotal: <strong>$0.0</strong>
+                </span>
+                <a href="#" class="checkout">Go To Checkout</a>
+                <a href="#" class="paypal">
+                  Check out with <img src="images/paypal.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </button>
+          <button class="btn-profile" id="btn-profile">
+            <img src="images/profile-pic (3).png" alt="" class="profile-img" />
+            <ul class="drop-profile" id="drop-profile">
+              <li><a href="#" class="drop-link">My Accont</a></li>
+              <li><a href="#" class="drop-link">My Wish List (0)</a></li>
+              <li><a href="#" class="drop-link">Compare</a></li>
+              <li><a href="#" class="drop-link">Create an Account</a></li>
+              <li><a href="#" class="drop-link">sign in</a></li>
+            </ul>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="main">
+      <section class="catelog-heading">
+        <div class="container">
+          <img src="images/catelog-head.svg" alt="" class="img-head" />
+          <div class="drop-right">
+            <a href="./index.html" class="home-link">Home</a>
+            <span class="angle-left">></span>
+            <a href="./about-us.html" class="catelog-link">Laptops</a>
+            <span class="angle-left">></span>
+            <a href="./about-us.html" class="catelog-link">
+              Everyday Use Notebooks
+            </a>
+            <span class="angle-left">></span>
+            <a href="./about-us.html" class="catelog-link">
+              MSI Prestige Series
+            </a>
+            <span class="angle-left">></span>
+            <a href="./about-us.html" class="catelog-link">MSI WS Series</a>
+          </div>
+          <h2 class="catelog-title">MSI PS Series (20)</h2>
+        </div>
+      </section>
+      <section class="catelog-content">
+        <div class="container">
+          <div class="list-view">
+            <a href="./index.html" class="back-home"><span><</span> Back</a>
+            <ul class="close-button">
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="filter">
+              <h3 class="filter-title">Filter</h3>
+              <button class="clear-filter">Clear Filter</button>
+              <button class="category item-1">
+                Categore <i class="fa-solid fa-angle-up"></i>
+              </button>
+              <div class="category-info item-2">
+                <span class="category-name">
+                  <span class="title">CUSTOM PCS</span>
+                  <span class="category-num">15</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">HP/COMPAQ PCS</span>
+                  <span class="category-num">45</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">MSI ALL-IN-ONE PCS</span>
+                  <span class="category-num">1</span>
+                </span>
+              </div>
+              <button class="price item-1">
+                Price <i class="fa-solid fa-angle-up"></i>
+              </button>
+              <div class="price-info item-2">
+                <span class="category-name">
+                  <span class="title">$0.00 - $1,000.00</span>
+                  <span class="category-num">19</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$1,000.00 - $2,000.00</span>
+                  <span class="category-num">21</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$2,000.00 - $3,000.00</span>
+                  <span class="category-num">9</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$3,000.00 - $4,000.00</span>
+                  <span class="category-num">6</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$4,000.00 - $5,000.00</span>
+                  <span class="category-num">3</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$5,000.00 - $6,000.00</span>
+                  <span class="category-num">1</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$6,000.00 - $7,000.00</span>
+                  <span class="category-num">1</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">$7,000.00 And Above</span>
+                  <span class="category-num">1</span>
+                </span>
+              </div>
+              <button class="color item-1">
+                Color <i class="fa-solid fa-angle-up"></i>
+              </button>
+              <div class="color-info item-2">
+                <p class="color-name"></p>
+                <p class="color-name"></p>
+              </div>
+              <button class="filter-name item-1">
+                Filter Name <i class="fa-solid fa-angle-up"></i>
+              </button>
+              <div class="filter-name-info item-2">
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+                <span class="category-name">
+                  <span class="title">XXXXXXXX</span>
+                  <span class="category-num">XX</span>
+                </span>
+              </div>
+              <button class="apply-filter">Applye Filters (2)</button>
+            </div>
+            <div class="min-brands">
+              <h3 class="brand-tile">Brands</h3>
+              <button class="all-brands">All Brands</button>
+            </div>
+            <div class="brands-all">
+              <img src="images/brand-intel.jpg" alt="" class="brand-img" />
+              <img src="images/brand-acer.jpg" alt="" class="brand-img" />
+              <img src="images/brand-sony.jpg" alt="" class="brand-img" />
+              <img src="images/brand-lenovo.png" alt="" class="brand-img" />
+              <img src="images/brand-msi.png" alt="" class="brand-img" />
+              <img src="images/brand-dell.png" alt="" class="brand-img" />
+            </div>
+            <div class="compare">
+              <h3 class="compare-tile">Compare Products</h3>
+              <p class="compare-text">You have no items to compare.</p>
+            </div>
+            <div class="wish-list">
+              <h3 class="wish-list-tile">My Wish List</h3>
+              <p class="wish-list-text">You have no items in your wish list.</p>
+            </div>
+            <img src="images/chair.svg" alt="" class="chair-img" />
+          </div>
+          <div class="list-info">
+            <div class="list-info-item">
+              <span class="items-count">items 1-35 of 61</span>
+              <div class="other-tools">
+                <button class="filter-slider">
+                  <i class="fa-solid fa-sliders fa-xl filter"></i>
+                </button>
+                <button class="position">
+                  <span class="sort">Sort By:</span>
+                  Position <i class="fa-solid fa-angle-down angle"></i>
+                </button>
+                <button class="per-page">
+                  <span class="show">Show:</span>
+                  35 per page <i class="fa-solid fa-angle-down angle"></i>
+                </button>
+                <button class="grid-system">
+                  <ul class="grid">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </button>
+                <button class="row-system sort-active">
+                  <ul class="row">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </button>
+              </div>
+            </div>
+            <div class="more-tools">
+              <button class="custom">
+                CUSTOM PCS <span>(24)</span>
+                <i class="fa-solid fa-circle-xmark xmark"></i>
+              </button>
+              <button class="sorting">
+                HP/COMPAQ PCS <span>(24)</span>
+                <i class="fa-solid fa-circle-xmark xmark"></i>
+              </button>
+              <button class="clear-all">Clear All</button>
+            </div>
+            <div class="grid-cards">
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-24.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-23.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-22.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-13.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-23.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-22.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-12.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-13.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-10.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-11.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-12.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-13.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-10.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-11.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-12.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container">
+                  <span class="available">
+                    <i class="fa-regular fa-circle-check"></i>
+                    in stock
+                  </span>
+                  <div class="hover-activity">
+                    <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                    <i class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                  </div>
+                  <img src="images/card-13.svg" alt="" class="card-img" />
+                  <div class="rate">
+                    <span class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="review">Review (4)</span>
+                  </div>
+                  <p class="card-info">
+                    EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH
+                    All-In-On...
+                  </p>
+                  <span class="disacount">$499.00</span>
+                  <h2 class="count">$499.00</h2>
+                  <a href="#" class="add-cart" id="add-cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add To Cart
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row-cards active-cards">
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-24.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-23.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-22.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-11.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-10.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-22.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <span class="available">
+                  <i class="fa-regular fa-circle-check"></i>
+                  in stock
+                </span>
+                <div class="card-container">
+                  <div class="about-card">
+                    <img src="images/card-10.svg" alt="" class="card-img" />
+                    <div class="rate">
+                      <span class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </span>
+                      <span class="review">Review (4)</span>
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <span class="id">SKU D5515AI</span>
+                    <div class="more-info">
+                      <p class="card-info">
+                        MSI CREATOR 17 A10SFS-240AU 17 UHD 4K HDR Thin Bezel
+                        Intel 10th Gen i7 10875H - RTX 2070 SUPER MAX Q - 16GB
+                        RAM - 1TB SSD NVME - Windows 10 PRO Laptop
+                      </p>
+                      <div class="cpu">
+                        <span class="item">
+                          <span class="item-name">CPU</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">Featured</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                        <span class="item">
+                          <span class="item-name">I/O Ports</span>
+                          <span class="item-info">N/A</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="price">
+                      <span class="disacount">$499.00</span>
+                      <h2 class="count">$499.00</h2>
+                    </div>
+                    <div class="card-tools">
+                      <a href="#" class="add-cart" id="add-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add To Cart
+                      </a>
+                      <div class="hover-activity">
+                        <i class="fa-solid fa-heart fa-lg activity-icon"></i>
+                        <i
+                          class="fa-solid fa-chart-simple fa-lg activity-icon"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pages-num">
+              <li><</li>
+              <li>1</li>
+              <li class="active">2</li>
+              <li>3</li>
+              <li>..</li>
+              <li>15</li>
+              <li>></li>
+            </ul>
+            <div class="some-texts">
+              <p class="text">
+                MSI has unveiled the Prestige Series line of business-class and
+                gaming notebooks. Tuned for color accuracy, the Prestige Series
+                also leverages True Color Technology, which allows users to
+                adjust the display profile to best fit their computing needs.
+              </p>
+              <p class="text">
+                There are six different screen profiles, which are tuned for
+                gaming, reducing eye fatigue, sRGB color accuracy, increasing
+                clarity for words and lines, reducing harmful blue light, and
+                optimizing contrast for watching movies.
+              </p>
+              <p class="text">
+                There are six different screen profiles, which are tuned for
+                gaming, reducing eye fatigue, sRGB color accuracy, increasing
+                clarity for words and lines, reducing harmful blue light, and
+                optimizing contrast for watching movies.
+              </p>
+              <p class="text">
+                There are six different screen profiles, which are tuned for
+                gaming, reducing eye fatigue, sRGB color accuracy, increasing
+                clarity for words and lines, reducing harmful blue light, and
+                optimizing contrast for watching movies.
+              </p>
+            </div>
+            <a href="./about-us.html" class="more">More</a>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="service">
+            <i class="fa-solid fa-headset service-icon fa-2x"></i>
+            <h3 class="service-title">Product Support</h3>
+            <span class="service-info">
+              Up to 3 years on-site warranty available for your peace of mind.
+            </span>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-user-tie service-icon fa-2x"></i>
+            <h3 class="service-title">Personal Account</h3>
+            <span class="service-info">
+              With big discounts, free delivery and a dedicated support
+              specialist.
+            </span>
+          </div>
+          <div class="service">
+            <i class="fa-solid fa-tag service-icon fa-2x"></i>
+            <h3 class="service-title">Amazing Savings</h3>
+            <span class="service-info">
+              Up to 70% off new Products, you can be sure of the best price.
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="sign-up">
+        <div class="container">
+          <div class="sign-text">
+            <h2 class="sign-title">Sign Up To Our Newsletter.</h2>
+            <span class="sign-info">
+              Be the first to hear about the latest offers.
+            </span>
+          </div>
+          <form class="subscribe">
+            <label for="email" class="label-email">
+              <input
+                type="email"
+                name="email"
+                class="sub-email"
+                placeholder="Your Email" />
+            </label>
+            <label for="submit" class="label-submit">
+              <input type="submit" value="Subscribe" class="sub-submit" />
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="container">
+          <div class="col information">
+            <h5 class="col-title">
+              <span class="name">Information</span>
+              <ul class="angel">
+                <li></li>
+                <li></li>
+              </ul>
+            </h5>
+            <ul class="col-links">
+              <li>
+                <a href="./about-us.html" class="col-link">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">About Zip</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Search</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Terms</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Orders and Returns</a>
+              </li>
+              <li>
+                <a href="./contact.htm" class="col-link">Contact US</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Advanced Search</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Newsletter Subscription</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col ports">
+            <h5 class="col-title">
+              <span class="name">Pc Ports</span>
+              <ul class="angel">
+                <li></li>
+                <li></li>
+              </ul>
+            </h5>
+            <ul class="col-links">
+              <li>
+                <a href="#" class="col-link">CPU</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Add On Cards</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Hard Drive (Internal)</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Graphic Cards</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Keyboards / Mice</a>
+              </li>
+              <li>
+                <a href="#" class="col-link"
+                  >Cases / Power Supplies / Cooling</a
+                >
+              </li>
+              <li>
+                <a href="#" class="col-link">RAM (Memory)</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Software</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Speakers / Headsets</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Motherboards</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col desktops">
+            <h5 class="col-title">
+              <span class="name">Desktop PCs</span>
+              <ul class="angel">
+                <li></li>
+                <li></li>
+              </ul>
+            </h5>
+            <ul class="col-links">
+              <li>
+                <a href="#" class="col-link">Custome PCs</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Servers</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">MSI All-In-One PCs</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">HP / Compaq PCs</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">ASUS PCs</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Tecs PCs</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col laptops">
+            <h5 class="col-title">
+              <span class="name">Laptops</span>
+              <ul class="angel">
+                <li></li>
+                <li></li>
+              </ul>
+            </h5>
+            <ul class="col-links">
+              <li>
+                <a href="#" class="col-link">Everyday Use Notebooks</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">MSI Workstation Series</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">MSI Prestige Series</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Tablets And Pads</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Netbooks</a>
+              </li>
+              <li>
+                <a href="#" class="col-link">Infinity Gaming Notebooks</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col address">
+            <h5 class="col-title">
+              <span class="name">Address</span>
+              <ul class="angel">
+                <li></li>
+                <li></li>
+              </ul>
+            </h5>
+            <ul class="col-links">
+              <li>
+                Address: <span> 1234 Street Adress City Address, 1234</span>
+              </li>
+              <li>Phones: <span> (00) 1234 5678</span></li>
+              <li>We are open:</li>
+              <li>Monday-Thursday: <span> 9:00 AM - 5:30 PM</span></li>
+              <li>Friday: <span> 9:00 AM - 6:00 PM</span></li>
+              <li>Saturday: <span> 11:00 AM - 5:00 PM</span></li>
+              <li>E-mail: <span> shop@email.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copywrite">
+        <div class="container">
+          <div class="media">
+            <i class="fa-brands icon fa-lg fa-square-facebook"></i>
+            <i class="fa-brands icon fa-lg fa-instagram"></i>
+          </div>
+          <div class="payment-brands">
+            <img src="images/payment-1.svg" alt="" class="payment" />
+            <img src="images/payment-2.svg" alt="" class="payment" />
+            <img src="images/payment-3.svg" alt="" class="payment" />
+            <img src="images/payment-4.svg" alt="" class="payment" />
+            <img src="images/payment-5.svg" alt="" class="payment" />
+          </div>
+          <div class="text">
+            <span class="copy-text">Copyright © 2020 Shop Pty. Ltd.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/catalog.js"></script>
+    <script src="js/global-ruls.js"></script>
+  </body>
+</html>
