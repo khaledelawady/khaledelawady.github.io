@@ -199,6 +199,9 @@ main .project .card.card.landing-three {
 main .project .card.card.read-me {
   background-color: #3a0ca3;
 }
+main .project .card.card.tech {
+  background-color: #0156ff;
+}
 main .project .card .image img {
   width: 100%;
   border-top-right-radius: 15px;
