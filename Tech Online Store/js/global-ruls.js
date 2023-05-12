@@ -138,14 +138,14 @@ function searchEvent() {
     searchBtn.classList.remove("active");
     header.style.cssText = "padding: 6px 0;";
     logo.style.display = "block";
-    toggleMenu.style.display = "none";
+    toggleMenu.style.display = "flex";
   } else {
     navLinks.style.display = "none";
     searchContent.style.display = "block";
     searchBtn.classList.add("active");
     logo.style.display = "none";
     header.style.cssText = "padding: 25px 0;";
-    toggleMenu.style.display = "block";
+    toggleMenu.style.display = "none";
   }
 }
 // cart
