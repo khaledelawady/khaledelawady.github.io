@@ -92,13 +92,17 @@ function profileMenu() {
 }
 
 // nav bar click
-var navLink = document.querySelectorAll(".nav-links .link");
+const navLink = document.querySelectorAll(".nav-links .link");
+const lapMenu = document.querySelector(".nav-links .laptops-menu");
+
 navLink.forEach((link) => {
   link.addEventListener("click", () => {
     if (link.classList.contains("active")) {
       link.classList.remove("active");
+      lapMenu.classList.remove("active");
     } else {
       link.classList.add("active");
+      lapMenu.classList.add("active");
     }
   });
 });
@@ -129,7 +133,7 @@ const searchBtn = document.getElementById("search-btn");
 const searchContent = document.getElementById("search");
 const logo = document.querySelector(".nav-bar-links .logo");
 searchBtn.onclick = searchEvent;
-
+var x = window.matchMedia("(max-width: 992px)");
 function searchEvent() {
   var navLinks = document.querySelector(".nav-links");
   if (navLinks.style.display === "none") {
@@ -138,20 +142,24 @@ function searchEvent() {
     searchBtn.classList.remove("active");
     header.style.cssText = "padding: 6px 0;";
     logo.style.display = "block";
-    toggleMenu.style.display = "flex";
+    if (x.matches) {
+      toggleMenu.style.display = "flex";
+    }
   } else {
     navLinks.style.display = "none";
     searchContent.style.display = "block";
     searchBtn.classList.add("active");
     logo.style.display = "none";
     header.style.cssText = "padding: 25px 0;";
-    toggleMenu.style.display = "none";
+    if (x.matches) {
+      toggleMenu.style.display = "none";
+    }
   }
 }
+
 // cart
 const addingCart = document.querySelectorAll(".add-cart");
 const cartImg = document.querySelectorAll(".card .card-img");
-//const cartImgClone = cartImg.cloneNode(true);
 const itemsCartcounts = document.querySelector(".btn-cart .drop-count");
 const cartContainer = document.querySelector(".btn-cart .cart-products");
 const cards = document.querySelectorAll(".card");
@@ -159,28 +167,40 @@ const cardContainer = document.querySelectorAll(".card .card-container");
 
 let countElements = 0;
 
+function countElementMin() {
+  countElements--;
+  itemsCartcounts.innerHTML = `${countElements} items in cart`;
+  cartBtn.setAttribute("data-cart", countElements);
+}
+
 let cardsID = 0;
 
+addingCart.forEach((cartlink) => {
+  cartlink.onclick = cartAddBtn;
+  cartlink.setAttribute("href", "##");
+});
+function cartAddBtn() {
+  countElements++;
+  itemsCartcounts.innerHTML = `${countElements} items in cart`;
+  cartBtn.setAttribute("data-cart", countElements);
+}
 cards.forEach((card) => {
-  addingCart.forEach((cartlink) => {
-    cartlink.onclick = cartAddBtn;
-    cartlink.setAttribute("href", "##");
-  });
-  function cartAddBtn() {
-    countElements++;
-    itemsCartcounts.innerHTML = `${countElements} items in cart`;
-    cartBtn.setAttribute("data-cart", countElements);
-    //cartContainer.appendChild(cartImgClone);
-  }
   cardsID++;
   card.setAttribute("data-id", cardsID);
 });
 cartImg.forEach((img) => {
   img.addEventListener("click", () => {
-    location.href =
-      "https://khaledelawady.github.io/Tech%20Online%20Store/about-product.html";
+    location.href = "../about-product.html";
   });
 });
+
+// addingCart.forEach(function (elem) {
+//   elem.onclick = function () {
+//     const imgCart = this.parentElement.children[2].cloneNode(true);
+//     console.log(imgCart);
+//     cartContainer.appendChild(imgCart);
+//   };
+// });
 
 // footer Info
 const footerTitleInfo = document.querySelector(
