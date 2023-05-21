@@ -190,17 +190,10 @@ cards.forEach((card) => {
 });
 cartImg.forEach((img) => {
   img.addEventListener("click", () => {
-    location.href = "../about-product.html";
+    location.href =
+      "https://khaledelawady.github.io/Tech%20Online%20Store/catelog.html";
   });
 });
-
-// addingCart.forEach(function (elem) {
-//   elem.onclick = function () {
-//     const imgCart = this.parentElement.children[2].cloneNode(true);
-//     console.log(imgCart);
-//     cartContainer.appendChild(imgCart);
-//   };
-// });
 
 // footer Info
 const footerTitleInfo = document.querySelector(
@@ -313,13 +306,19 @@ function activeFooterAdd() {
   }
 }
 
-//footer herf
-// const footerTitleHerf = document.querySelectorAll(
-//   ".footer .footer-links .col-links .col-link"
-// );
+// To Up BTN
+const toUpBtn = document.querySelector(".to-up-btn");
+window.onscroll = () => {
+  if (this.scrollY >= 600) {
+    toUpBtn.classList.add("active");
+  } else {
+    toUpBtn.classList.remove("active");
+  }
+};
 
-// footerTitleHerf.forEach((item) => {
-//   if (item.hasAttribute("href", "#")) {
-//     item.setAttribute("href", "##");
-//   }
-// });
+toUpBtn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
