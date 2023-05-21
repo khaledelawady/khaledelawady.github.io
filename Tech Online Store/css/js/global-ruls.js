@@ -194,14 +194,6 @@ cartImg.forEach((img) => {
   });
 });
 
-// addingCart.forEach(function (elem) {
-//   elem.onclick = function () {
-//     const imgCart = this.parentElement.children[2].cloneNode(true);
-//     console.log(imgCart);
-//     cartContainer.appendChild(imgCart);
-//   };
-// });
-
 // footer Info
 const footerTitleInfo = document.querySelector(
   ".footer .footer-links .information .col-title"
