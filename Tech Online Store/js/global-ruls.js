@@ -191,9 +191,17 @@ cards.forEach((card) => {
 cartImg.forEach((img) => {
   img.addEventListener("click", () => {
     location.href =
-      "https://khaledelawady.github.io/Tech%20Online%20Store/catelog.html";
+      "https://khaledelawady.github.io/Tech%20Online%20Store/about-product.html";
   });
 });
+
+// addingCart.forEach(function (elem) {
+//   elem.onclick = function () {
+//     const imgCart = this.parentElement.children[2].cloneNode(true);
+//     console.log(imgCart);
+//     cartContainer.appendChild(imgCart);
+//   };
+// });
 
 // footer Info
 const footerTitleInfo = document.querySelector(
