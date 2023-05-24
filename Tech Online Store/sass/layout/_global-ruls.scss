@@ -117,7 +117,7 @@ ul {
   position: fixed;
   bottom: 20px;
   right: -70px;
-  z-index: 1;
+  z-index: 9999;
   transition: 0.3s;
   .up_icon {
     font-size: 30px;
