@@ -40,6 +40,21 @@ window.onscroll = function () {
   if (windowScrollTop === headerOffsetTop) {
     navbar.classList.remove("active-nav");
   }
+
+  // to up
+  if (this.scrollY >= 600) {
+    toUpBtn.classList.add("active");
+  } else {
+    toUpBtn.classList.remove("active");
+  }
+};
+// To Up BTN
+const toUpBtn = document.querySelector(".to-up-btn");
+toUpBtn.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 };
 
 // menu toggle
@@ -195,14 +210,6 @@ cartImg.forEach((img) => {
   });
 });
 
-// addingCart.forEach(function (elem) {
-//   elem.onclick = function () {
-//     const imgCart = this.parentElement.children[2].cloneNode(true);
-//     console.log(imgCart);
-//     cartContainer.appendChild(imgCart);
-//   };
-// });
-
 // footer Info
 const footerTitleInfo = document.querySelector(
   ".footer .footer-links .information .col-title"
@@ -313,20 +320,3 @@ function activeFooterAdd() {
     footerLinksAdd.classList.add("active");
   }
 }
-
-// To Up BTN
-const toUpBtn = document.querySelector(".to-up-btn");
-window.onscroll = () => {
-  if (this.scrollY >= 600) {
-    toUpBtn.classList.add("active");
-  } else {
-    toUpBtn.classList.remove("active");
-  }
-};
-
-toUpBtn.onclick = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-};
