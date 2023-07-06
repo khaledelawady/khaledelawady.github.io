@@ -1,3 +1,9 @@
+//////////////////////////////////
+
+// Index => main.js
+
+/////////////////////////////////
+
 // slider img
 var imgSlider = Array.from(document.querySelectorAll(".slide-img"));
 
