@@ -1,0 +1,225 @@
+*,
+::before,
+::after {
+  --webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --first-color: #ff5371;
+  --second-color: #ff6740;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  height: 100vh;
+  margin: auto;
+  padding: 0 30px;
+  z-index: 10;
+}
+
+.sign-up-info .signup-title {
+  font-size: 4.5rem;
+  margin: 1.5rem 0;
+}
+
+.sign-up-info .signup-text {
+  font-weight: 500;
+  margin: 1.5rem 0;
+  letter-spacing: 1px;
+}
+
+.sign-up-info .about-update {
+  display: flex;
+  flex-direction: column;
+  margin: 3.5rem 0;
+  gap: 20px;
+}
+
+.sign-up-info .about-update .update {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.sign-up-info .about-update .update .icon {
+  width: 32px;
+}
+
+.sign-up-info .sign-form {
+  display: grid;
+  gap: 10px;
+  margin: 1.5rem 0;
+}
+
+.sign-up-info .sign-form .email-label {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.sign-up-info .sign-form .email-label .email-required {
+  color: var(--first-color) !important;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.sign-up-info .sign-form .email-label .email-required.active {
+  opacity: 1;
+}
+
+.sign-up-info .sign-form #email {
+  width: auto;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  transition: 0.3s;
+}
+
+.sign-up-info .sign-form #email.active {
+  border-color: var(--first-color) !important;
+  background-color: #ff537124 !important;
+}
+
+.sign-up-info .subscribe-button {
+  padding: 20px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  background: #242742;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.sign-up-info .subscribe-button:hover {
+  background: linear-gradient(20deg, var(--first-color), var(--second-color));
+  color: #fff;
+  box-shadow: -2px 7px 20px 0px var(--second-color);
+  transition: 0.3s;
+}
+
+/* start success page */
+.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 0%;
+  background-color: #00000070;
+  transition: 0.3s;
+}
+.overlay.active {
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+}
+.success-info {
+  position: fixed;
+  z-index: 12;
+  background-color: #fff;
+  padding: 36px 30px;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min-content;
+  display: grid;
+  gap: 40px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.success-info.active {
+  animation: poop 1s ease forwards;
+  z-index: 12;
+}
+
+@keyframes poop {
+  50% {
+    top: 60%;
+  }
+  75% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+.success-info .success-title {
+  font-size: 4.5rem;
+}
+
+.success-info .success-text {
+  font-size: 20px;
+}
+
+.success-info .success-text span {
+  font-size: 21px;
+  font-weight: 600;
+}
+.success-info .dismiss-button {
+  padding: 20px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  background: #242742;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.success-info .dismiss-button:hover {
+  background: linear-gradient(20deg, var(--first-color), var(--second-color));
+  color: #fff;
+  box-shadow: -2px 7px 20px 0px var(--second-color);
+  transition: 0.3s;
+}
+
+/* end success page */
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .sign-up-info {
+    padding: 30px;
+  }
+}
+@media (max-width: 757px) {
+  .success-title {
+    font-size: 3.5rem !important;
+  }
+  .signup-title {
+    font-size: 3.5rem !important;
+  }
+}
+@media (max-width: 552px) {
+  .container {
+    padding: 0;
+  }
+  .sign-img {
+    width: 100%;
+  }
+  .sign-img .illustration {
+    width: 100%;
+  }
+}
