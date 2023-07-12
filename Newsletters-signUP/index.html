@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="sign-up-info">
+          <h2 class="signup-title">Stay update!</h2>
+          <p class="signup-text">
+            Join 60,000+ product managers receiving monthly update on:
+          </p>
+          <div class="about-update">
+            <div class="update">
+              <img src="./Images/icon-success.svg" alt="" class="icon" />
+              <span class="update-info"
+                >Product discovery and building what matters</span
+              >
+            </div>
+            <div class="update">
+              <img src="./Images/icon-success.svg" alt="" class="icon" />
+              <span class="update-info"
+                >Measuring to ensure updates a success</span
+              >
+            </div>
+            <div class="update">
+              <img src="./Images/icon-success.svg" alt="" class="icon" />
+              <span class="update-info">And much more!</span>
+            </div>
+          </div>
+          <form class="sign-form">
+            <label for="email" class="email-label">
+              <span class="email-name">Email address</span>
+              <span class="email-required">Valid email required</span>
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ash@loremcompany.com"
+              required />
+          </form>
+          <button class="subscribe-button">
+            Subscribe to monthly newsletter
+          </button>
+        </section>
+        <section class="sign-img">
+          <img
+            src="./Images/illustration-sign-up-desktop.svg"
+            alt=""
+            class="illustration" />
+        </section>
+      </div>
+      <div class="overlay"></div>
+      <section class="success-info">
+        <img src="./Images/icon-success.svg" alt="" class="icon" />
+        <h2 class="success-title">Thanks for subscribing!</h2>
+        <p class="success-text">
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com</span>. Please open it and click the button
+          inside to confirm your subscription
+        </p>
+        <button class="dismiss-button">Dismiss massage</button>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
