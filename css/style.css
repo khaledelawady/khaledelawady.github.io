@@ -25,6 +25,13 @@ a {
 ul {
   list-style: none;
 }
+.stars {
+  position: fixed;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -64,9 +71,7 @@ body .vertical-centered-box .content {
 }
 
 body {
-  background: #2c2d44;
-}
-.load-page {
+  background: var(--dark-color);
 }
 .loader-circle {
   position: absolute;
@@ -174,16 +179,7 @@ body {
   height: 100vh;
   background-image: url(../images/landing.jpg);
   background-size: cover;
-}
-.headroom {
-  will-change: transform;
-  transition: transform 200ms linear;
-}
-.headroom--pinned {
-  transform: translateY(0%);
-}
-.headroom--unpinned {
-  transform: translateY(-100%);
+  transition: 0.3s;
 }
 .landing .container {
   position: relative;
@@ -191,43 +187,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.landing header {
-  padding: 20px 0;
-}
-.landing .logo img {
-  width: 150px;
-}
-.landing .links {
-  display: flex;
-  position: relative;
-  gap: 20px;
-}
-.landing .links a {
-  position: relative;
-  font-size: 23px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  width: fit-content;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px var(--main-color);
-  transition: 0.3s;
-}
-.landing a::before {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  -webkit-text-fill-color: var(--scondry-color);
-  transition: 0.3s;
-  width: 0;
-  overflow: hidden;
-}
+
 @media (max-width: 768px) {
-  .links a {
-    display: none;
+  .landing {
+    background-image: none;
   }
-}
-.landing a:hover::before {
-  width: 100%;
 }
 .landing .heading-text {
   position: absolute;
@@ -248,19 +212,7 @@ body {
   opacity: 0;
   animation: rise-khaled 1.8s ease-in-out forwards 0.5s;
 }
-.active {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #0009;
-  width: 100%;
-  z-index: 1000;
-}
-header.headroom--top {
-  position: sticky;
-  background-color: transparent;
-  transition: 0.5s;
-}
+
 /* end landing */
 main {
   background-color: var(--dark-color);
@@ -316,6 +268,7 @@ main {
 .about .project span {
   position: absolute;
   display: block;
+  background-color: brown !important;
 }
 
 .about .project span:nth-child(1) {
