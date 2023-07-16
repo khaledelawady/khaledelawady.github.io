@@ -4,27 +4,34 @@
   padding: 0;
   margin: 0;
 }
+
 :root {
   --main-color: #66bef9;
   --scondry-color: #309af1;
   --paragraph-color: #767676;
   --dark-color: #050307;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   user-select: none;
+  background-color: #000;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 .stars {
   position: fixed;
   overflow: hidden;
@@ -32,123 +39,58 @@ ul {
   width: 100%;
   pointer-events: none;
 }
+
 .container {
   padding: 0 15px;
   margin: auto;
 }
+
 .load-page {
-  z-index: 10;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
   position: fixed;
-  width: 100%;
+  display: flex;
+  gap: 10px;
   height: 100vh;
+  margin: auto;
+  justify-content: center;
+  background-color: black;
   overflow: hidden;
-}
-body .vertical-centered-box {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+  z-index: 10;
 }
 
-body .vertical-centered-box:after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em;
-}
-
-body .vertical-centered-box .content {
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-  font-size: 0;
-}
-
-* {
-  transition: all 0.3s;
-}
-
-body {
-  background: var(--dark-color);
-}
-.loader-circle {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 120px;
-  height: 120px;
+.load-page span {
+  height: 50px;
+  border: 3px solid #fff;
+  width: 50px;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-  margin-left: -60px;
-  margin-top: -60px;
+  background-color: #222;
+  transition: 0.3s;
+  animation: load 1s ease infinite forwards;
 }
 
-.loader-line-mask {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 60px;
-  height: 120px;
-  margin-left: -60px;
-  margin-top: -60px;
-  overflow: hidden;
-  transform-origin: 60px 60px;
-  mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
-  animation: rotate 1.2s infinite linear;
+.load-page span:nth-child(2) {
+  animation-delay: 0.2s;
 }
 
-.loader-line-mask .loader-line {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+.load-page span:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
-#particles-background,
-#particles-foreground {
-  left: -51%;
-  top: -51%;
-  width: 202%;
-  height: 202%;
-  transform: scale3d(0.5, 0.5, 1);
+.load-page span:nth-child(4) {
+  animation-delay: 0.6s;
 }
 
-#particles-background {
-  background: #2c2d44;
-  background-image: -moz-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-  background-image: -webkit-linear-gradient(45deg, #3f3251 2%, #002025 100%);
-  background-image: linear-gradient(45deg, #3f3251 2%, #002025 100%);
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-
+@keyframes load {
   50% {
-    opacity: 0.25;
+    background-color: #fff;
   }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
   100% {
-    opacity: 1;
+    animation-delay: 3s;
+    background-color: #222;
   }
 }
 
@@ -181,6 +123,7 @@ body {
   background-size: cover;
   transition: 0.3s;
 }
+
 .landing .container {
   position: relative;
   align-items: center;
@@ -193,6 +136,7 @@ body {
     background-image: none;
   }
 }
+
 .landing .heading-text {
   position: absolute;
   left: 50%;
@@ -207,6 +151,7 @@ body {
   transition: 0.3s;
   animation: rise 1s ease-in-out forwards;
 }
+
 .landing .heading-text span {
   color: var(--scondry-color);
   opacity: 0;
@@ -217,6 +162,7 @@ body {
 main {
   background-color: var(--dark-color);
 }
+
 /* start about */
 .about {
   position: relative;
@@ -224,17 +170,20 @@ main {
   opacity: 0;
   transition: opacity 1s;
 }
+
 .opacity {
   top: -10vh;
   opacity: 1;
   transition: 1s;
 }
+
 .about .container {
   position: relative;
   background-color: #000;
   padding: 20px;
   box-shadow: 0 0 11px 2px black;
 }
+
 .about h3 {
   color: var(--main-color);
   text-align: center;
@@ -246,8 +195,7 @@ main {
   text-align: center;
   margin: 40px 0;
   line-height: 1.8;
-  font-weight: 200;
-  letter-spacing: 1px;
+  font-weight: 400;
 }
 .about .project {
   position: relative;
@@ -258,7 +206,6 @@ main {
   overflow: hidden;
   transition: 0.5s;
   margin-top: 40px;
-  letter-spacing: 2px;
   font-weight: 600;
 }
 .about .project:hover {
