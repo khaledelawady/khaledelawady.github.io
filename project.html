@@ -22,6 +22,9 @@
       rel="stylesheet" />
   </head>
   <body>
+    <div class="load-page" id="loader-page">
+      <span></span><span></span><span></span><span></span>
+    </div>
     <div class="stars">
       <div class="svg">
         <img src="images/landing.svg" alt="" />
@@ -261,5 +264,11 @@
       </section>
     </main>
     <script src="js/project.js"></script>
+    <script>
+      const loader = document.getElementById("loader-page");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
