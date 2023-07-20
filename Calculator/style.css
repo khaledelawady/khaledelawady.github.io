@@ -1,0 +1,126 @@
+* {
+  transition: 0.3;
+}
+
+:root {
+  --body-background: #000;
+  --container-background: #fff;
+  --num-color: brown;
+  --tools-color: #000;
+  --special-color: rgba(165, 42, 42, 0.691);
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-background);
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.calc .tools button.active {
+  box-shadow: 0px 1px 0px 2px;
+}
+
+.calc .num-box button.active {
+  box-shadow: 0px 1px 0px 2px;
+}
+
+.calc .title {
+  color: #fff;
+  margin: 0;
+  font-size: 35px;
+}
+
+.calc .creator {
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.calc .calc-container {
+  padding: 40px 20px;
+  display: grid;
+  background-color: var(--container-background);
+  gap: 20px;
+  border-radius: 17px;
+}
+
+.calc #text {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: xxx-large;
+  border-bottom: 2px solid #ccc;
+  font-size: 20px;
+  padding: 2px 3px;
+}
+
+.calc .tools,
+.calc .num-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.calc .tools .delete,
+.calc .tools .divide {
+  flex: 1;
+}
+
+.calc .tools button,
+.calc .num-box button {
+  font-weight: 700;
+  width: 100%;
+  border-radius: 9%;
+  border: none;
+  outline: none;
+  font-size: x-large;
+  box-shadow: 0px 4px 0px 2px #00000057;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@media (max-width: 757px) {
+  .calc #text {
+    font-size: xx-large !important;
+  }
+  .tools button,
+  .num-box button {
+    font-size: xx-large !important;
+  }
+}
+
+.num-box .num {
+  color: var(--num-color);
+}
+
+.calc .num-box:last-child button:first-child {
+  flex: 1;
+}
+.calc .num-box:last-child button:nth-child(2) {
+  flex: 1;
+}
+
+.calc .ac {
+  color: #fff;
+  background-color: var(--num-color);
+  box-shadow: 0px 4px 0px 2px var(--special-color) !important;
+  flex: 4;
+}
+
+.calc .equals {
+  flex: 2;
+  color: #fff;
+  background-color: var(--num-color);
+  box-shadow: 0px 4px 0px 2px var(--special-color) !important;
+}
