@@ -255,6 +255,12 @@ main .project .card.card.news-sign-up {
 main .project .card.card.news-sign-up .info p {
   color: #fff;
 }
+main .project .card.card.calculator {
+  background-color: brown;
+}
+main .project .card.card.calculator .info p {
+  color: #fff;
+}
 main .project .card .image img {
   width: 100%;
   border-top-right-radius: 15px;
