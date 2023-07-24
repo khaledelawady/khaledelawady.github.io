@@ -1,446 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freshy</title>
-    <link rel="website icon" type="png" href="../images/k-high-resolution-logo-color-on-transparent-background.png">
+    <link
+      rel="website icon"
+      type="png"
+      href="../images/k-high-resolution-logo-color-on-transparent-background.png" />
     <!-- Headroom cdn -->
     <script src="https://unpkg.com/headroom.js"></script>
     <!-- bootstrap min -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- font Awsome -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
     <!-- normalize -->
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <!-- main style -->
-    <link rel="stylesheet" href="css/bondie.css">
+    <link rel="stylesheet" href="css/bondie.css" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet" />
+  </head>
   <body>
-    <nav class=" navbar navbar-expand-lg bg-body-tertiary p-5" id="navbar-example2">
+    <div class="load-page" id="loader-page">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary p-5"
+      id="navbar-example2">
       <div class="container">
         <a class="navbar-brand fs-2" href="#">Freshy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 nav">
-          <li class="nav-item">
-            <a class="nav-link fs-5 active" aria-current="page" href="#landing">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="#scrollspyHeading1">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="#scrollspyHeading2">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="#scrollspyHeading3">Healthy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fs-5" href="#scrollspyHeading4">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="image">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img class="" src="images/profile-pic (3).png" alt="" />
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Info</a></li>
-            <li><a class="dropdown-item" href="#">Sitting</a></li>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 nav">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 active"
+                aria-current="page"
+                href="#landing"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading1">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading2">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading3">Healthy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading4">Contact</a>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </nav>
-  <main class="position-relative d-flex justify-content-center flex-column align-items-center overflow-hidden gap-5" data-bs-spy="scroll" data-bs-target="#navbar-example2"  data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-    <section class="landing pt-5 pb-5 w-100" id="landing" >
-      <div class="landing-event">
-        <ul class="list-unstyled">
-          <li class="svg-1">
-            <img src="images/landing-paper.svg" alt=""  />
-          </li>
-          <li class="svg-2" >
-            <img src="images/landing-leaves-1.svg" alt="" />
-          </li>
-          <li class="svg-3" >
-            <img src="images/landing-leaves-2.svg" alt="" />
-          </li>
-          <li class="svg-4" >
-            <img src="images/landing-leaves-3.svg" alt="" />
-          </li>
-        </ul>
-      </div>
-      <div class="container d-flex justify-content-center">
-        <div class="landing-text d-flex flex-column text-center align-items-center gap-3  pt-5  w-50 w-sm-100">
-          <h1 class="landing-head fs-1">Finally, the dish you have been waiting for on your table</h1>
-          <p class="landing-paragraph">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-            demonstrate the visual form of a
-            document</p>
-          <a href="#" class="landing-order text-decoration-none p-3 fs-5 rounded-pill ">Order Now</a>
-        </div>
-      </div>
-      <div class="landing-images d-flex justify-content-center">
-        <img src="images/landing-menu-1.svg" alt="" class="frist-img" />
-        <div class="main-menu position-relative">
-          <img src="images/landing-menu-2.svg" alt="" class="scound-img" />
-          <img src="images/landing-hat.svg" alt="" class="svg-5" />
-        </div>
-        <img src="images/landing-menu-3.svg" alt="" class="therth-img" />
-      </div>
-      <img src="images/landing-tomat.svg" alt="" class="svg-6" />
-      <img src="images/landing-green-leaves.svg" alt="" class="svg-7" />
-      <img src="images/landing-lemon.svg" alt="" class="svg-8" />
-    </section>
-    <section class="top-list position-relative pt-5 pb-5" id="scrollspyHeading1" >
-      <img src="images/landing-lemon.svg" alt="" class="svg-9" />
-      <div class="container d-flex flex-column justify-content-center align-items-center">
-        <div class="text-head text-center">
-          <h2 class="top-head">Top List Is Back</h2>
-        <p class="top-paragh">All our best meals in one delicious snap</p>
-      </div>
-        <div class="cards d-flex gap-5 mt-5">
-          <div class="card p-3">
-            <div class="top">
-              <div class="image">
-                <img src="images/burger.svg" alt="" class="meal-img" />
-              </div>
-              <span class="price fs-3">$10.99</span>
-            </div>
-            <div class="bottom d-flex justify-content-around align-items-center">
-              <div class="text">
-                <h4 class="meal-head">Beef Cheese Burger</h4>
-                <p class="meal-paragh">With Special Sauce</p>
-                <span class="meal-model">5.0</span>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card p-3">
-            <div class="top">
-              <div class="image">
-                <img src="images/salad.svg" alt="" class="meal-img salad" />
-              </div>
-              <span class="price fs-3">$10.99</span>
-            </div>
-            <div class="bottom d-flex justify-content-around align-items-center">
-              <div class="text">
-                <h4 class="meal-head">Mix Salad</h4>
-                <p class="meal-paragh">With Special Sauce</p>
-                <span class="meal-model">5.0</span>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card p-3">
-            <div class="top">
-              <div class="image">
-                <img src="images/chicken.svg" alt="" class="meal-img" />
-              </div>
-              <span class="price fs-3">$10.99</span>
-            </div>
-            <div class="bottom d-flex justify-content-around align-items-center">
-              <div class="text">
-                <h4 class="meal-head">Chicken Spaghetti</h4>
-                <p class="meal-paragh">With Special Sauce</p>
-                <span class="meal-model">5.0</span>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
+        <div class="image">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img class="" src="images/profile-pic (3).png" alt="" />
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Info</a></li>
+              <li><a class="dropdown-item" href="#">Sitting</a></li>
+            </ul>
           </div>
         </div>
-        <div class="cards-2 d-flex justify-content-center mt-5 gap-5">
-          <div class="card p-3">
-            <div class="top">
-              <div class="image">
-                <img src="images/vegan.svg" alt="" class="meal-img" />
-              </div>
-              <span class="price fs-3">$10.99</span>
-            </div>
-            <div class="bottom d-flex justify-content-around align-items-center">
-              <div class="text">
-                <h4 class="meal-head">Beef Cheese Burger</h4>
-                <p class="meal-paragh">With Special Sauce</p>
-                <span class="meal-model">5.0</span>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-          <div class="card p-3">
-            <div class="top">
-              <div class="image">
-                <img src="images/pizza.svg" alt="" class="meal-img" />
-              </div>
-              <span class="price fs-3">$10.99</span>
-            </div>
-            <div class="bottom d-flex justify-content-around align-items-center">
-              <div class="text">
-                <h4 class="meal-head">Chessy Pizza</h4>
-                <p class="meal-paragh">With Special Sauce</p>
-                <span class="meal-model">5.0</span>
-              </div>
-              <div class="icon">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img src="images/landing-green-leaves.svg" alt="" class="svg-10" />
-        <img src="images/green-leaves-2.svg" alt="" class="svg-11" />
-        <img src="images/landing-tomat-2.svg" alt="" class="svg-12" />
       </div>
-    </section>
-    <section class="health pt-5 pb-5 position-relative w-100" id="scrollspyHeading3" >
-      <img src="images/landing-lemon.svg" alt="" class="svg-13" />
-      <div class="container">
-        <h2 class="health-title fs-1">For super nutrition, the chic and health conscious flock to Freshy.</h2>
-        <div class="health-info d-flex align-items-center gap-5">
-          <div class="health-content w-50 text-center">
-            <span class="health-number">150+</span>
-            <p class="health-paragh">In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-              demonstrate.</p>
-          </div>
-          <div class="health-content-2 position-relative w-25">
-            <img src="images/health-img.svg" alt="" class="health-img" />
-            <img src="images/health-img-2.svg" alt="" class="health-img-2" />
-          </div>
-          <a href="#" class="read-more">Read More</a>
+    </nav>
+    <main
+      class="position-relative d-flex justify-content-center flex-column align-items-center overflow-hidden gap-5"
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+      tabindex="0">
+      <section class="landing pt-5 pb-5 w-100" id="landing">
+        <div class="landing-event">
+          <ul class="list-unstyled">
+            <li class="svg-1">
+              <img src="images/landing-paper.svg" alt="" />
+            </li>
+            <li class="svg-2">
+              <img src="images/landing-leaves-1.svg" alt="" />
+            </li>
+            <li class="svg-3">
+              <img src="images/landing-leaves-2.svg" alt="" />
+            </li>
+            <li class="svg-4">
+              <img src="images/landing-leaves-3.svg" alt="" />
+            </li>
+          </ul>
         </div>
-      </div>
-      <img src="images/leaves-2.svg" alt="" class="svg-14" />
-    </section>
-    <section class="gallery pt-5 pb-5 position-relative w-100">
-      <div class="container">
-        <div class="img-1">
-          <img src="images/gallery.svg" alt="" />
-          <img src="images/half-tomat.svg" alt="" class="svg-15">
-        </div>
-        <div class="img-2 text-end mt-5 position-relative">
-          <img src="images/gallery-2.svg" alt="" />
-          <img src="images/landing-lemon.svg" alt="" class="svg-16">
-          <img src="images/landing-paper.svg" alt="" class="svg-17">
-          <img src="images/gallery-leaves.svg" alt="" class="svg-18">
-        </div>
-      </div>
-    </section>
-    <section class="about pt-5 pb-5 position-relative w-100 " id="scrollspyHeading2" >
-      <h3 class="head-section">About</h3>
-      <div class="container d-flex gap-5">
-        <div class="about-content position-relative">
-          <h2 class="about-title fs-1">Why Freshy?</h2>
-          <div class="about-text mt-5">
-            <h4 class="title-text ">Chef-Crafted For Pure Joy</h4>
-            <p class="paragh-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+        <div class="container d-flex justify-content-center">
+          <div
+            class="landing-text d-flex flex-column text-center align-items-center gap-3 pt-5 w-50 w-sm-100">
+            <h1 class="landing-head fs-1">
+              Finally, the dish you have been waiting for on your table
+            </h1>
+            <p class="landing-paragraph">
+              In publishing and graphic design, Lorem ipsum is a placeholder
+              text commonly used to demonstrate the visual form of a document
+            </p>
+            <a
+              href="#"
+              class="landing-order text-decoration-none p-3 fs-5 rounded-pill"
+              >Order Now</a
+            >
           </div>
-          <div class="about-text mt-5">
-            <h4 class="title-text">Ingredient You Can Trust</h4>
-            <p class="paragh-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-          </div>
-          <div class="about-text mt-5 mb-5">
-            <h4 class="title-text">Special Dishes As You Like</h4>
-            <p class="paragh-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-          </div>
-          <a href="#" class="learn-more mt-5">Learn More</a>
-          <img src="images/half-tomat.svg" alt="" class="svg-19">
         </div>
-        <div class="about-images position-relative">
-          <img src="images/about-paper.svg" alt="" class="svg-20" />
-          <img src="images/about.svg" alt="" class="img-1" style="transform: translate(-20px, -45px);" />
-          <img src="images/about-2.svg" alt="" class="img-2" style="transform: translate(0px, 80px);" />
-          <img src="images/about-3.svg" alt="" class="img-3" style="transform: translate(0px, -35px);" />
-          <img src="images/landing-lemon.svg" alt="" class="svg-21" />
+        <div class="landing-images d-flex justify-content-center">
+          <img src="images/landing-menu-1.svg" alt="" class="frist-img" />
+          <div class="main-menu position-relative">
+            <img src="images/landing-menu-2.svg" alt="" class="scound-img" />
+            <img src="images/landing-hat.svg" alt="" class="svg-5" />
+          </div>
+          <img src="images/landing-menu-3.svg" alt="" class="therth-img" />
         </div>
-      </div>
-    </section>
-    <section class="testimoni pt-5 pb-5 position-relative w-100 text-center" >
-      <h3 class="head-section">Testimoni</h3>
-      <h2 class="testi-title">Real Client Review</h2>
-    <div id="carouselExampleIndicators" class="carousel slide">
-      <div class="carousel-inner mt-5 mb-5 p-5">
-        <div class="carousel-item active">
-          <div class="container gap-5 text-start">
-            <div class="card d-flex flex-row p-3 gap-3">
-              <img src="images/testimoni.svg" alt="" class="card-img">
-              <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                <i class="fa-solid fa-quote-left fa-2x"></i>
-                <p class="paragh-card">Lorem ipsum dolor
-                  quod
-                  sit repellat sapiente pariatur accusamus.</p>
-                <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                <span class="carer pt-2 border-top">Steve Smith, Director Of Venus</span>
+        <img src="images/landing-tomat.svg" alt="" class="svg-6" />
+        <img src="images/landing-green-leaves.svg" alt="" class="svg-7" />
+        <img src="images/landing-lemon.svg" alt="" class="svg-8" />
+      </section>
+      <section
+        class="top-list position-relative pt-5 pb-5"
+        id="scrollspyHeading1">
+        <img src="images/landing-lemon.svg" alt="" class="svg-9" />
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center">
+          <div class="text-head text-center">
+            <h2 class="top-head">Top List Is Back</h2>
+            <p class="top-paragh">All our best meals in one delicious snap</p>
+          </div>
+          <div class="cards d-flex gap-5 mt-5">
+            <div class="card p-3">
+              <div class="top">
+                <div class="image">
+                  <img src="images/burger.svg" alt="" class="meal-img" />
+                </div>
+                <span class="price fs-3">$10.99</span>
               </div>
-            </div>
-            <div class="card d-flex flex-row p-3 gap-3">
-              <img src="images/testimoni-2.svg" alt="" class="card-img">
-              <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                <i class="fa-solid fa-quote-left fa-2x"></i>
-                <p class="paragh-card">Lorem ipsum dolor
-                  quod
-                  sit repellat sapiente pariatur accusamus.</p>
-                  <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                  <span class="carer pt-2 border-top">Monica Jen, Manager Of Venus</span>
+              <div
+                class="bottom d-flex justify-content-around align-items-center">
+                <div class="text">
+                  <h4 class="meal-head">Beef Cheese Burger</h4>
+                  <p class="meal-paragh">With Special Sauce</p>
+                  <span class="meal-model">5.0</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </div>
               </div>
-              <div class="card d-flex flex-row  p-3 gap-3">
-                <img src="images/testimoni-3.svg" alt="" class="card-img">
-                <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                  <i class="fa-solid fa-quote-left fa-2x"></i>
-                  <p class="paragh-card">Lorem ipsum dolor
-                    quod
-                    sit repellat sapiente pariatur accusamus.</p>
-                <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                <span class="carer pt-2 border-top">Steve Smith, Director Of Venus</span>
+            </div>
+            <div class="card p-3">
+              <div class="top">
+                <div class="image">
+                  <img src="images/salad.svg" alt="" class="meal-img salad" />
+                </div>
+                <span class="price fs-3">$10.99</span>
+              </div>
+              <div
+                class="bottom d-flex justify-content-around align-items-center">
+                <div class="text">
+                  <h4 class="meal-head">Mix Salad</h4>
+                  <p class="meal-paragh">With Special Sauce</p>
+                  <span class="meal-model">5.0</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card p-3">
+              <div class="top">
+                <div class="image">
+                  <img src="images/chicken.svg" alt="" class="meal-img" />
+                </div>
+                <span class="price fs-3">$10.99</span>
+              </div>
+              <div
+                class="bottom d-flex justify-content-around align-items-center">
+                <div class="text">
+                  <h4 class="meal-head">Chicken Spaghetti</h4>
+                  <p class="meal-paragh">With Special Sauce</p>
+                  <span class="meal-model">5.0</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container gap-5 text-start">
-            <div class="card d-flex flex-row p-3 gap-3">
-              <img src="images/testimoni.svg" alt="" class="card-img">
-              <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                <i class="fa-solid fa-quote-left"></i>
-                <p class="paragh-card">Lorem ipsum dolor
-                  quod
-                  sit repellat sapiente pariatur accusamus.</p>
-                  <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                  <span class="carer pt-2 border-top">Steve Smith, Director Of Venus</span>
+          <div class="cards-2 d-flex justify-content-center mt-5 gap-5">
+            <div class="card p-3">
+              <div class="top">
+                <div class="image">
+                  <img src="images/vegan.svg" alt="" class="meal-img" />
+                </div>
+                <span class="price fs-3">$10.99</span>
+              </div>
+              <div
+                class="bottom d-flex justify-content-around align-items-center">
+                <div class="text">
+                  <h4 class="meal-head">Beef Cheese Burger</h4>
+                  <p class="meal-paragh">With Special Sauce</p>
+                  <span class="meal-model">5.0</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
                 </div>
               </div>
-              <div class="card d-flex flex-row p-3 gap-3">
-                <img src="images/testimoni-2.svg" alt="" class="card-img">
-                <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                  <i class="fa-solid fa-quote-left"></i>
-                  <p class="paragh-card">Lorem ipsum dolor
-                    quod
-                    sit repellat sapiente pariatur accusamus.</p>
-                    <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                    <span class="carer pt-2 border-top">Monica Jen, Manager Of Venus</span>
+            </div>
+            <div class="card p-3">
+              <div class="top">
+                <div class="image">
+                  <img src="images/pizza.svg" alt="" class="meal-img" />
+                </div>
+                <span class="price fs-3">$10.99</span>
+              </div>
+              <div
+                class="bottom d-flex justify-content-around align-items-center">
+                <div class="text">
+                  <h4 class="meal-head">Chessy Pizza</h4>
+                  <p class="meal-paragh">With Special Sauce</p>
+                  <span class="meal-model">5.0</span>
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="images/landing-green-leaves.svg" alt="" class="svg-10" />
+          <img src="images/green-leaves-2.svg" alt="" class="svg-11" />
+          <img src="images/landing-tomat-2.svg" alt="" class="svg-12" />
+        </div>
+      </section>
+      <section
+        class="health pt-5 pb-5 position-relative w-100"
+        id="scrollspyHeading3">
+        <img src="images/landing-lemon.svg" alt="" class="svg-13" />
+        <div class="container">
+          <h2 class="health-title fs-1">
+            For super nutrition, the chic and health conscious flock to Freshy.
+          </h2>
+          <div class="health-info d-flex align-items-center gap-5">
+            <div class="health-content w-50 text-center">
+              <span class="health-number">150+</span>
+              <p class="health-paragh">
+                In publishing and graphic design, Lorem ipsum is a placeholder
+                text commonly used to demonstrate.
+              </p>
+            </div>
+            <div class="health-content-2 position-relative w-25">
+              <img src="images/health-img.svg" alt="" class="health-img" />
+              <img src="images/health-img-2.svg" alt="" class="health-img-2" />
+            </div>
+            <a href="#" class="read-more">Read More</a>
+          </div>
+        </div>
+        <img src="images/leaves-2.svg" alt="" class="svg-14" />
+      </section>
+      <section class="gallery pt-5 pb-5 position-relative w-100">
+        <div class="container">
+          <div class="img-1">
+            <img src="images/gallery.svg" alt="" />
+            <img src="images/half-tomat.svg" alt="" class="svg-15" />
+          </div>
+          <div class="img-2 text-end mt-5 position-relative">
+            <img src="images/gallery-2.svg" alt="" />
+            <img src="images/landing-lemon.svg" alt="" class="svg-16" />
+            <img src="images/landing-paper.svg" alt="" class="svg-17" />
+            <img src="images/gallery-leaves.svg" alt="" class="svg-18" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="about pt-5 pb-5 position-relative w-100"
+        id="scrollspyHeading2">
+        <h3 class="head-section">About</h3>
+        <div class="container d-flex gap-5">
+          <div class="about-content position-relative">
+            <h2 class="about-title fs-1">Why Freshy?</h2>
+            <div class="about-text mt-5">
+              <h4 class="title-text">Chef-Crafted For Pure Joy</h4>
+              <p class="paragh-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </div>
+            <div class="about-text mt-5">
+              <h4 class="title-text">Ingredient You Can Trust</h4>
+              <p class="paragh-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </div>
+            <div class="about-text mt-5 mb-5">
+              <h4 class="title-text">Special Dishes As You Like</h4>
+              <p class="paragh-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard
+              </p>
+            </div>
+            <a href="#" class="learn-more mt-5">Learn More</a>
+            <img src="images/half-tomat.svg" alt="" class="svg-19" />
+          </div>
+          <div class="about-images position-relative">
+            <img src="images/about-paper.svg" alt="" class="svg-20" />
+            <img
+              src="images/about.svg"
+              alt=""
+              class="img-1"
+              style="transform: translate(-20px, -45px)" />
+            <img
+              src="images/about-2.svg"
+              alt=""
+              class="img-2"
+              style="transform: translate(0px, 80px)" />
+            <img
+              src="images/about-3.svg"
+              alt=""
+              class="img-3"
+              style="transform: translate(0px, -35px)" />
+            <img src="images/landing-lemon.svg" alt="" class="svg-21" />
+          </div>
+        </div>
+      </section>
+      <section class="testimoni pt-5 pb-5 position-relative w-100 text-center">
+        <h3 class="head-section">Testimoni</h3>
+        <h2 class="testi-title">Real Client Review</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner mt-5 mb-5 p-5">
+            <div class="carousel-item active">
+              <div class="container gap-5 text-start">
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Steve Smith, Director Of Venus</span
+                    >
                   </div>
                 </div>
-                <div class="card d-flex flex-row  p-3 gap-3">
-                  <img src="images/testimoni-3.svg" alt="" class="card-img">
-                  <div class="card-text d-flex flex-column align-items-baseline gap-4">
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni-2.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Monica Jen, Manager Of Venus</span
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni-3.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left fa-2x"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Steve Smith, Director Of Venus</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container gap-5 text-start">
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
                     <i class="fa-solid fa-quote-left"></i>
-                    <p class="paragh-card">Lorem ipsum dolor
-                      quod
-                      sit repellat sapiente pariatur accusamus.</p>
-                      <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                      <span class="carer pt-2 border-top">Steve Smith, Director Of Venus</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container gap-5 text-start">
-            <div class="card d-flex flex-row p-3 gap-3">
-              <img src="images/testimoni.svg" alt="" class="card-img">
-              <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                <i class="fa-solid fa-quote-left"></i>
-                <p class="paragh-card">Lorem ipsum dolor
-                  quod
-                  sit repellat sapiente pariatur accusamus.</p>
-                  <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                  <span class="carer pt-2 border-top">Steve Smith, Director Of Venus</span>
-                </div>
-              </div>
-              <div class="card d-flex flex-row p-3 gap-3">
-                <img src="images/testimoni-2.svg" alt="" class="card-img">
-                <div class="card-text d-flex flex-column align-items-baseline gap-4">
-                  <i class="fa-solid fa-quote-left"></i>
-                  <p class="paragh-card">Lorem ipsum dolor
-                    quod
-                    sit repellat sapiente pariatur accusamus.</p>
-                    <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                    <span class="carer pt-2 border-top">Monica Jen, Manager Of Venus</span>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Steve Smith, Director Of Venus</span
+                    >
                   </div>
                 </div>
-                <div class="card d-flex flex-row  p-3 gap-3">
-                  <img src="images/testimoni-3.svg" alt="" class="card-img">
-                  <div class="card-text d-flex flex-column align-items-baseline gap-4">
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni-2.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
                     <i class="fa-solid fa-quote-left"></i>
-                    <p class="paragh-card">Lorem ipsum dolor quodsit repellat sapiente pariatur accusamus.</p>
-                      <img src="images/V-testimoni.svg" alt="" class="svg-card">
-                      <span class="carer pt-2 border-top">Steve Smith, Director Of Venus</span>
-                    </div>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Monica Jen, Manager Of Venus</span
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni-3.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Steve Smith, Director Of Venus</span
+                    >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" 
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <div class="carousel-item">
+              <div class="container gap-5 text-start">
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Steve Smith, Director Of Venus</span
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni-2.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quod sit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Monica Jen, Manager Of Venus</span
+                    >
+                  </div>
+                </div>
+                <div class="card d-flex flex-row p-3 gap-3">
+                  <img src="images/testimoni-3.svg" alt="" class="card-img" />
+                  <div
+                    class="card-text d-flex flex-column align-items-baseline gap-4">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="paragh-card">
+                      Lorem ipsum dolor quodsit repellat sapiente pariatur
+                      accusamus.
+                    </p>
+                    <img src="images/V-testimoni.svg" alt="" class="svg-card" />
+                    <span class="carer pt-2 border-top"
+                      >Steve Smith, Director Of Venus</span
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-      <img src="images/half-tomat.svg" alt="" class="svg-22">
-    </section>
-    <section class="book pt-5 pb-5 position-relative w-100" id="scrollspyHeading4" >
-      <div class="container d-flex gap-5 align-items-center">
-        <img src="images/book.svg" alt="" class="book-img" />
-        <div class="book-text d-flex flex-column gap-5">
-          <h2 class="book-title fs-1">Reserve Your Seat</h2>
-          <p class="book-paragh">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam voluptatibus nemo. Voluptatibus dignissimos explicabo deserunt animi doloribus nihil labore, quo veritatis inventore debitis maiores.</p>
-          <div class="book-now d-flex justify-content-around align-items-center border-bottom border-dark">
-            <h2 class="book-now fs-1 me-5">Book Now</h2>
-            <i class="fa-solid fa-arrow-right-long fa-3x arrow"></i>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              class="active"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
           </div>
         </div>
+        <img src="images/half-tomat.svg" alt="" class="svg-22" />
+      </section>
+      <section
+        class="book pt-5 pb-5 position-relative w-100"
+        id="scrollspyHeading4">
+        <div class="container d-flex gap-5 align-items-center">
+          <img src="images/book.svg" alt="" class="book-img" />
+          <div class="book-text d-flex flex-column gap-5">
+            <h2 class="book-title fs-1">Reserve Your Seat</h2>
+            <p class="book-paragh">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+              veniam voluptatibus nemo. Voluptatibus dignissimos explicabo
+              deserunt animi doloribus nihil labore, quo veritatis inventore
+              debitis maiores.
+            </p>
+            <div
+              class="book-now d-flex justify-content-around align-items-center border-bottom border-dark">
+              <h2 class="book-now fs-1 me-5">Book Now</h2>
+              <i class="fa-solid fa-arrow-right-long fa-3x arrow"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="position-relative pt-5 pb-5 w-100">
+      <div class="container position-relative d-flex justify-content-between">
+        <div class="foot position-relative contact d-flex flex-column">
+          <h2 class="title mb-5">Contact</h2>
+          <span class="email">abo.amar361@yahoo.com</span>
+        </div>
+        <div class="foot position-relative drop d-flex flex-column">
+          <h2 class="title mb-5">Drop By</h2>
+          <span class="email">Zagazig, Sharqia, Egypt</span>
+          <span class="email">+20 123456789</span>
+        </div>
+        <div class="foot position-relative follow d-flex flex-column">
+          <h2 class="title mb-5">Follow Us</h2>
+          <span class="email">Instagram</span>
+          <span class="email">Twitter</span>
+        </div>
+        <div class="foot position-relative legal d-flex flex-column">
+          <h2 class="title mb-5">Legal</h2>
+          <span class="email"
+            >Website by Khaled Elawady ©2022. All Rights Reserved</span
+          >
+        </div>
       </div>
-    </section>
-  </main>
-  <footer class="position-relative pt-5 pb-5 w-100">
-    <div class="container position-relative d-flex justify-content-between">
-      <div class="foot position-relative contact d-flex flex-column">
-        <h2 class="title mb-5">Contact</h2>
-        <span class="email">abo.amar361@yahoo.com</span>
-      </div>
-      <div class="foot position-relative drop d-flex flex-column">
-        <h2 class="title mb-5">Drop By</h2>
-        <span class="email">Zagazig, Sharqia, Egypt</span>
-        <span class="email">+20 123456789</span>
-      </div>
-      <div class="foot position-relative follow d-flex flex-column">
-        <h2 class="title mb-5">Follow Us</h2>
-        <span class="email">Instagram</span>
-        <span class="email">Twitter</span>
-      </div>
-      <div class="foot position-relative legal d-flex flex-column">
-        <h2 class="title mb-5">Legal</h2>
-        <span class="email">Website by Khaled Elawady
-        ©2022. All Rights Reserved</span>
-      </div>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/all.min.js"></script>
-  <script>
-    var myElement = document.querySelector(".navbar");
-    // construct an instance of Headroom, passing the element
-    var headroom = new Headroom(myElement);
-    // initialise
-    headroom.init();
-  </script>
-</body>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script>
+      var myElement = document.querySelector(".navbar");
+      // construct an instance of Headroom, passing the element
+      var headroom = new Headroom(myElement);
+      // initialise
+      headroom.init();
+    </script>
+    <script>
+      const loader = document.getElementById("loader-page");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
