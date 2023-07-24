@@ -1,0 +1,127 @@
+.login {
+  position: relative;
+  padding: 20px 0;
+  .login-info {
+    .drop-right {
+      padding: 20px 0;
+      .home-link {
+        color: var(--dark-color);
+        font-weight: 400;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .login-link {
+        @extend .home-link;
+      }
+    }
+    .login-title {
+      font-size: 30px;
+      font-weight: 600;
+      padding: 20px 0;
+    }
+    .login-about {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      transition: 0.3s;
+      .registered {
+        display: grid;
+        gap: 20px;
+        padding: 40px 50px;
+        background-color: var(--background-color);
+        .register-title {
+          font-size: 16px;
+        }
+        .register-form {
+          display: grid;
+          gap: 30px;
+          .user-box {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            label {
+              font-size: 14px;
+              font-weight: 600;
+              span {
+                color: var(--false-color);
+              }
+            }
+            input {
+              outline: none;
+              border: 1px solid var(--text-color);
+              padding: 14px 10px;
+              font-size: 16px;
+              caret-color: var(--main-color);
+              &::placeholder {
+                transition: opacity 0.3s;
+              }
+              &:focus::placeholder {
+                opacity: 0;
+              }
+            }
+            #phone {
+              width: 400px;
+            }
+            #comment {
+              @extend input;
+            }
+          }
+          .submit-forget {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .sign-in {
+              position: relative;
+              width: fit-content;
+              border: none;
+              background-color: var(--main-color);
+              color: #fff;
+              padding: 16px 45px;
+              border-radius: 30px;
+              cursor: pointer;
+              transition: 0.3s;
+              &:hover {
+                color: var(--dark-color);
+              }
+            }
+            .forget-link {
+              color: var(--main-color);
+              font-weight: 500;
+            }
+          }
+        }
+      }
+      .create-account {
+        display: flex;
+        flex-direction: column;
+        @extend .registered;
+        .customer-benefits {
+          list-style: disc;
+        }
+        .create-account-link {
+          position: relative;
+          width: fit-content;
+          border: none;
+          background-color: var(--main-color);
+          color: #fff;
+          padding: 16px 45px;
+          border-radius: 30px;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            color: var(--dark-color);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .login .login-about {
+    flex-direction: column;
+  }
+}
