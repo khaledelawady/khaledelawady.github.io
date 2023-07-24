@@ -12,6 +12,9 @@
       rel="stylesheet" />
   </head>
   <body>
+    <div class="load-page" id="loader-page">
+      <span></span><span></span><span></span><span></span>
+    </div>
     <main>
       <div class="container">
         <section class="sign-up-info">
@@ -73,5 +76,11 @@
       </section>
     </main>
     <script src="./js/main.js"></script>
+    <script>
+      const loader = document.getElementById("loader-page");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
   </body>
 </html>
