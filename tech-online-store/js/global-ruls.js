@@ -206,7 +206,7 @@ cards.forEach((card) => {
 cartImg.forEach((img) => {
   img.addEventListener("click", () => {
     location.href =
-      "https://khaledelawady.github.io/Tech%20Online%20Store/about-product.html";
+      "https://khaledelawady.github.io/tech-online-store/about-product";
   });
 });
 
