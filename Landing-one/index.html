@@ -1,70 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" type="png" href="../images/k-high-resolution-logo-color-on-transparent-background.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="website icon"
+      type="png"
+      href="../images/k-high-resolution-logo-color-on-transparent-background.png" />
     <title>Landing</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="load-page" id="loader-page">
+      <span></span><span></span><span></span><span></span>
+    </div>
     <div class="landing">
-        <div class="container">
-            <header>
-                <div class="logo">
-                    <img src="imgs/chevio-high-resolution-logo-color-on-transparent-background.png" alt="" />
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Time Line</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="sign">
-                    <a href="#">Sign In</a>
-                </div>
-            </header>
-            <div class="landing-info">
-                <div class="info">
-                    <h2>Make Your Decision</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, eum cumque architecto eaque sint illum nobis repellat sed dolorum id, asperiores porro fugit obcaecati molestiae doloribus adipisci deserunt minima ab.</p>
-                    <a href="">Join Now!</a>
-                </div>
-                <div class="images">
-                    <img src="imgs/slack-slack-com.svg" alt="">
-                </div>
-            </div>
-            <div class="svg">
-                <svg class="svg-two" xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 590.96 358.34"><defs><style>.cls-1{opacity:0.55;}.cls-2{fill:#398378;}.cls-3{fill:#d3d3d3;}</style></defs><title>Slack</title><g class="cls-1"><path class="cls-2" d="M748.94,609.13l15.51-10A153.75,153.75,0,0,0,779,573c-6.75-1.73-20.72,5.4-20.72,5.4,13.83-8.44,18.8-9.45,23.34-12.2,4-11.58,2.47-24.33,2.58-35.25C769.87,544.61,765.67,547,765.67,547c9.08-7.35,13.78-15.26,18.52-20.79-.73-27.17-9.39-35.83-9.39-35.83-6.72,4.64-20.45,17-25.86,21.55a234.51,234.51,0,0,0-1.46,28.8c-1.69-7.28-2-18.08-1.88-25.92-7.71,6.8-6.39,5.78-11.71,12.56-2.16,13-.4,35.5-.4,35.5-2.59-8.56-3.43-22.32-3.7-29.95a119.46,119.46,0,0,0-17.54,38.14c1.47,11.13,4.15,22.26,4.15,22.26a91.74,91.74,0,0,1-5.59-16.5c-3.53,15.21-5.13,31.45-7,49.5l2.47,15.39L725,634.82c14.24-6.81,26-18,35.16-29.93Z" transform="translate(-220.18 -356.96)"/></g><g class="cls-1"><path class="cls-2" d="M734.54,661.21l18.37-2.1a154,154,0,0,0,24.69-16.93c-5.28-4.54-21-4.38-21-4.38,16.13-1.4,21-.1,26.32-.54,8.7-8.61,13-20.7,18-30.43-19,5.89-23.8,6.18-23.8,6.18,11.41-2.55,19.13-7.54,25.84-10.39,11.43-24.66,7.52-36.27,7.52-36.27-8.08,1.18-25.87,6.13-32.75,7.81a237.38,237.38,0,0,0-14.11,25.14c1.72-7.27,6.29-17.06,9.85-24-9.94,2.66-8.3,2.34-16.08,6-7.73,10.72-16.14,31.62-16.14,31.62,1.49-8.82,6.85-21.52,10-28.48a119.54,119.54,0,0,0-32.67,26.37c-3.63,10.63-6.18,21.79-6.18,21.79a91,91,0,0,1,2.33-17.27c-9.92,12-18.58,25.89-28.31,41.21l-4.62,14.89,19.9,2.17c15.78.22,31.3-4.61,44.8-11.19Z" transform="translate(-220.18 -356.96)"/></g>
-                </svg>
-            </div>
+      <div class="container">
+        <header>
+          <div class="logo">
+            <img
+              src="imgs/chevio-high-resolution-logo-color-on-transparent-background.png"
+              alt="" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Time Line</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="sign">
+            <a href="#">Sign In</a>
+          </div>
+        </header>
+        <div class="landing-info">
+          <div class="info">
+            <h2>Make Your Decision</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Laudantium, eum cumque architecto eaque sint illum nobis repellat
+              sed dolorum id, asperiores porro fugit obcaecati molestiae
+              doloribus adipisci deserunt minima ab.
+            </p>
+            <a href="">Join Now!</a>
+          </div>
+          <div class="images">
+            <img src="imgs/slack-slack-com.svg" alt="" />
+          </div>
         </div>
+        <div class="svg">
+          <svg
+            class="svg-two"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 590.96 358.34">
+            <defs>
+              <style>
+                .cls-1 {
+                  opacity: 0.55;
+                }
+                .cls-2 {
+                  fill: #398378;
+                }
+                .cls-3 {
+                  fill: #d3d3d3;
+                }
+              </style>
+            </defs>
+            <title>Slack</title>
+            <g class="cls-1">
+              <path
+                class="cls-2"
+                d="M748.94,609.13l15.51-10A153.75,153.75,0,0,0,779,573c-6.75-1.73-20.72,5.4-20.72,5.4,13.83-8.44,18.8-9.45,23.34-12.2,4-11.58,2.47-24.33,2.58-35.25C769.87,544.61,765.67,547,765.67,547c9.08-7.35,13.78-15.26,18.52-20.79-.73-27.17-9.39-35.83-9.39-35.83-6.72,4.64-20.45,17-25.86,21.55a234.51,234.51,0,0,0-1.46,28.8c-1.69-7.28-2-18.08-1.88-25.92-7.71,6.8-6.39,5.78-11.71,12.56-2.16,13-.4,35.5-.4,35.5-2.59-8.56-3.43-22.32-3.7-29.95a119.46,119.46,0,0,0-17.54,38.14c1.47,11.13,4.15,22.26,4.15,22.26a91.74,91.74,0,0,1-5.59-16.5c-3.53,15.21-5.13,31.45-7,49.5l2.47,15.39L725,634.82c14.24-6.81,26-18,35.16-29.93Z"
+                transform="translate(-220.18 -356.96)" />
+            </g>
+            <g class="cls-1">
+              <path
+                class="cls-2"
+                d="M734.54,661.21l18.37-2.1a154,154,0,0,0,24.69-16.93c-5.28-4.54-21-4.38-21-4.38,16.13-1.4,21-.1,26.32-.54,8.7-8.61,13-20.7,18-30.43-19,5.89-23.8,6.18-23.8,6.18,11.41-2.55,19.13-7.54,25.84-10.39,11.43-24.66,7.52-36.27,7.52-36.27-8.08,1.18-25.87,6.13-32.75,7.81a237.38,237.38,0,0,0-14.11,25.14c1.72-7.27,6.29-17.06,9.85-24-9.94,2.66-8.3,2.34-16.08,6-7.73,10.72-16.14,31.62-16.14,31.62,1.49-8.82,6.85-21.52,10-28.48a119.54,119.54,0,0,0-32.67,26.37c-3.63,10.63-6.18,21.79-6.18,21.79a91,91,0,0,1,2.33-17.27c-9.92,12-18.58,25.89-28.31,41.21l-4.62,14.89,19.9,2.17c15.78.22,31.3-4.61,44.8-11.19Z"
+                transform="translate(-220.18 -356.96)" />
+            </g>
+          </svg>
+        </div>
+      </div>
     </div>
     <!--End Landing -->
     <!-- Start About -->
     <div class="about">
-        <div class="svg">
-            <!-- <?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" class="svg-one" viewBox="0 0 1440 320"><path fill="#398378" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,192C672,160,768,128,864,101.3C960,75,1056,53,1152,69.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" class="svg-two" viewBox="0 0 1440 320"><path fill="#398378" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,154.7C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>         -->
+      <div class="svg">
+        <!-- <?xml version="1.0" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" class="svg-one" viewBox="0 0 1440 320"><path fill="#398378" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,250.7C384,256,480,224,576,192C672,160,768,128,864,101.3C960,75,1056,53,1152,69.3C1248,85,1344,139,1392,165.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" class="svg-two" viewBox="0 0 1440 320"><path fill="#398378" fill-opacity="1" d="M0,256L80,240C160,224,320,192,480,154.7C640,117,800,75,960,69.3C1120,64,1280,96,1360,112L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>         -->
+      </div>
+      <div class="container">
+        <div class="content">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consectetur, velit incidunt eveniet architecto ipsa eligendi
+            voluptates, fugit id sapiente unde dolor commodi possimus natus
+            repudiandae, rem nulla. Doloribus, commodi natus!
+          </p>
         </div>
-        <div class="container">
-            <div class="content">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, velit incidunt eveniet architecto ipsa eligendi voluptates, fugit id sapiente unde dolor commodi possimus natus repudiandae, rem nulla. Doloribus, commodi natus!</p>
-            </div>
-            <div class="image">
-                <img src="imgs/about-us.svg" alt="" />
-            </div>
+        <div class="image">
+          <img src="imgs/about-us.svg" alt="" />
         </div>
+      </div>
     </div>
     <!-- End About -->
-</body>
+    <script>
+      const loader = document.getElementById("loader-page");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
 </html>
