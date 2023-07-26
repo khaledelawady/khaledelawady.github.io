@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://khaledelawady.github.io</loc>
-    <lastmod>2013-01-01</lastmod>
+    <lastmod>2023-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
 </url>
@@ -11,8 +11,63 @@
     <changefreq>weekly</changefreq>
 </url>
 <url>
-    <loc>https://khaledelawady.github.io/project/</loc>
-    <lastmod>2013-01-02</lastmod>
+    <loc>https://khaledelawady.github.io/Kasper</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Kitchen</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Landing-one</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Landing-two</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Landing-three</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Restaurant</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/sign-up</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/tech-online-store</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/read-me</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Newsletters-signUP</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Calculator</loc>
+    <lastmod>2023-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+</url>
+<url>
+    <loc>https://khaledelawady.github.io/Blog</loc>
+    <lastmod>2023-07-27</lastmod>
     <changefreq>weekly</changefreq>
 </url>
 </urlset>
