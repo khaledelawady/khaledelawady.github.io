@@ -354,7 +354,7 @@ footer {
   background: black;
   height: 30vh;
 }
-footer h4 {
+footer span {
   color: var(--scondry-color);
   position: absolute;
   left: 50%;
