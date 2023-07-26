@@ -152,6 +152,10 @@ ul {
   animation: rise 1s ease-in-out forwards;
 }
 
+.landing .heading-text .rise {
+  font-size: 40px;
+}
+
 .landing .heading-text span {
   color: var(--scondry-color);
   opacity: 0;
@@ -184,7 +188,7 @@ main {
   box-shadow: 0 0 11px 2px black;
 }
 
-.about h3 {
+.about h1 {
   color: var(--main-color);
   text-align: center;
   font-size: 32px;
