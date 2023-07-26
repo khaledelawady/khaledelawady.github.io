@@ -43,6 +43,11 @@ ul {
   pointer-events: none;
 }
 
+.stars img {
+  width: auto;
+  height: auto;
+}
+
 .load-page {
   left: 50%;
   width: 100%;
