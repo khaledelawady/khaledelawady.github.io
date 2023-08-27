@@ -263,6 +263,9 @@ main .project .card.card.news-sign-up .info p {
 main .project .card.card.calculator {
   background-color: brown;
 }
+main .project .card.card.comments {
+  background-color: hsl(238, 40%, 52%);
+}
 main .project .card.card.calculator .info p {
   color: #fff;
 }
