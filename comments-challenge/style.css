@@ -254,6 +254,9 @@ button {
 }
 
 @media (max-width: 767px) {
+  .admin #username {
+    width: 100%;
+  }
   .commented .comment,
   .admin-commented .comment {
     flex-direction: column-reverse;
