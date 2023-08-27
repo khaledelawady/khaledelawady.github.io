@@ -30,6 +30,7 @@ adminUsername.onblur = function () {
 const adminSection = document.querySelector(".admin");
 const overlay = document.querySelector(".overlay");
 const continueBtn = document.getElementById("submit");
+const adminCommentAvatar = document.querySelectorAll(".admin_avatar");
 
 continueBtn.onclick = () => {
   if (
@@ -39,14 +40,12 @@ continueBtn.onclick = () => {
   } else {
     adminSection.classList.add("disable");
     overlay.classList.add("disable");
+    // adding admin avatar to admin comments section
+    adminCommentAvatar.forEach((avatar) => {
+      avatar.src = window.localStorage.getItem("adminAvatar");
+    });
   }
 };
-
-// adding admin avatar to admin comments section
-const adminCommentAvatar = document.querySelectorAll(".admin_avatar");
-adminCommentAvatar.forEach((avatar) => {
-  avatar.src = window.localStorage.getItem("adminAvatar");
-});
 
 // Create replay event to add new replay message
 const replyBtn = document.querySelectorAll(".reply_btn");
