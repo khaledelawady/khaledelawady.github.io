@@ -494,6 +494,10 @@ button {
   z-index: 8;
 }
 
+.admin-commente {
+  width: 100%;
+}
+
 .admin-commented .user_comment .main_comment {
   position: relative;
   width: 100%;
