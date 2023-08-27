@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments Challenge</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <div class="load-page" id="loader-page">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <section class="admin">
+      <div class="container">
+        <h1 class="title">Add Your Avatar And Your Username</h1>
+        <label for="img-add" class="img_container">
+          <img src="resorses/images/avatar.jfif" id="avatar-img" />
+        </label>
+        <input
+          type="file"
+          id="img-add"
+          accept="image/jpeg, image/png, image/jpg" />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          maxlength="18"
+          placeholder="Your_username"
+          pattern="[A-Za-z][0-9]{0}"
+          title="The username do not have numbers" />
+        <button href="./comments.html" id="submit">
+          CONTINUE <img src="./resorses/images/icon-arrow.svg" alt="" />
+        </button>
+      </div>
+    </section>
+    <div class="overlay"></div>
+    <main id="main">
+      <div class="container">
+        <div class="commented">
+          <div class="comment">
+            <div class="rating">
+              <button class="rate_increment">+</button>
+              <button class="rate_num">12</button>
+              <button class="rate_decrement">-</button>
+            </div>
+            <div class="user">
+              <div class="user_info">
+                <div class="about_user">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="resorses/images/avatars/image-amyrobson.png" />
+                    <img
+                      src="resorses/images/avatars/image-amyrobson.png"
+                      alt=""
+                      width="40px;"
+                      id="user_avatar" />
+                  </picture>
+                  <h1 id="user_name">amyrobson</h1>
+                  <span id="adding_time">1 month ago</span>
+                </div>
+                <button class="reply_btn">
+                  <svg
+                    width="14"
+                    height="13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z"
+                      fill="#5357B6" />
+                  </svg>
+                  Reply
+                </button>
+              </div>
+              <p id="comment_text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi explicabo id odit est libero tempora in ut numquam
+                molestias suscipit, modi deserunt ad! Dolorem commodi saepe
+                deserunt voluptatibus? Voluptate, quia?
+              </p>
+            </div>
+          </div>
+          <div class="replys">
+            <div class="reply">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="resorses/images/avatars/image-juliusomo.png" />
+                <img
+                  src="resorses/images/avatars/image-juliusomo.png"
+                  alt=""
+                  width="40px;"
+                  class="admin_avatar" />
+              </picture>
+              <textarea
+                name="commentText"
+                class="reply_text"
+                cols="30"
+                rows="3"></textarea>
+              <button id="reply_push">REPLY</button>
+            </div>
+          </div>
+        </div>
+        <div class="commented">
+          <div class="comment">
+            <div class="rating">
+              <button class="rate_increment">+</button>
+              <button class="rate_num">5</button>
+              <button class="rate_decrement">-</button>
+            </div>
+            <div class="user">
+              <div class="user_info">
+                <div class="about_user">
+                  <picture>
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="resorses/images/avatars/image-maxblagun.png" />
+                    <img
+                      src="resorses/images/avatars/image-maxblagun.png"
+                      alt=""
+                      width="40px;"
+                      id="user_avatar" />
+                  </picture>
+                  <h1 id="user_name">maxblagun</h1>
+                  <span id="adding_time">2 weeks ago</span>
+                </div>
+                <button class="reply_btn">
+                  <svg
+                    width="14"
+                    height="13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z"
+                      fill="#5357B6" />
+                  </svg>
+                  Reply
+                </button>
+              </div>
+              <p id="comment_text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi explicabo id odit est libero tempora in ut numquam
+                molestias suscipit, modi deserunt ad! Dolorem commodi saepe
+                deserunt voluptatibus? Voluptate, quia?
+              </p>
+            </div>
+          </div>
+          <div class="replys">
+            <div class="reply">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="resorses/images/avatars/image-juliusomo.png" />
+                <img
+                  src="resorses/images/avatars/image-juliusomo.png"
+                  alt=""
+                  width="40px;"
+                  class="admin_avatar" />
+              </picture>
+              <textarea
+                name="commentText"
+                class="reply_text"
+                cols="30"
+                rows="3">
+              </textarea>
+              <button id="reply_push">REPLY</button>
+            </div>
+          </div>
+        </div>
+        <div class="admin-commented">
+          <div class="comment">
+            <div class="rating">
+              <button class="rate_increment">+</button>
+              <button class="rate_num">5</button>
+              <button class="rate_decrement">-</button>
+            </div>
+            <div class="user">
+              <div class="user_info">
+                <div class="about_user">
+                  <picture>
+                    <img
+                      src="resorses/images/avatars/image-maxblagun.png"
+                      alt=""
+                      width="40px;"
+                      class="admin_avatar" />
+                  </picture>
+                  <h1 class="user_name">maxblagun</h1>
+                  <span id="admin_">you</span>
+                  <span id="admin_adding_time"></span>
+                </div>
+                <div class="buttons">
+                  <button class="delete_btn">
+                    <svg
+                      width="12"
+                      height="14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.167 12.448c0 .854.7 1.552 1.555 1.552h6.222c.856 0 1.556-.698 1.556-1.552V3.5H1.167v8.948Zm10.5-11.281H8.75L7.773 0h-3.88l-.976 1.167H0v1.166h11.667V1.167Z"
+                        fill="#ED6368" />
+                    </svg>
+                    Delete
+                  </button>
+                  <button class="edit_btn">
+                    <svg
+                      width="14"
+                      height="14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.479 2.872 11.08.474a1.75 1.75 0 0 0-2.327-.06L.879 8.287a1.75 1.75 0 0 0-.5 1.06l-.375 3.648a.875.875 0 0 0 .875.954h.078l3.65-.333c.399-.04.773-.216 1.058-.499l7.875-7.875a1.68 1.68 0 0 0-.061-2.371Zm-2.975 2.923L8.159 3.449 9.865 1.7l2.389 2.39-1.75 1.706Z"
+                        fill="#5357B6" />
+                    </svg>
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <p id="admin_comment_text"></p>
+              <textarea
+                name="editComment"
+                class="edit_comment"
+                cols="45"
+                rows="3"></textarea>
+              <button class="update_btn">UPDATE</button>
+            </div>
+          </div>
+        </div>
+        <div class="user_comment">
+          <div class="main_comment">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="resorses/images/avatars/image-juliusomo.png" />
+              <img
+                src="resorses/images/avatars/image-juliusomo.png"
+                alt=""
+                width="40px;"
+                class="admin_avatar" />
+            </picture>
+            <textarea
+              name="commentText"
+              class="comment_text"
+              cols="45"
+              placeholder="Add a comment ..."
+              rows="3"></textarea>
+            <button id="comment_push">SEND</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const loader = document.getElementById("loader-page");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
