@@ -117,10 +117,11 @@ button {
   position: fixed;
   top: 50%;
   left: 50%;
+  padding: 10px 20px;
   transform: translate(-50%, -50%);
   z-index: 10;
   width: 90%;
-  height: 80%;
+  height: 92%;
   border-radius: 10px;
   background-color: var(--light-grayish-blue);
   box-shadow: 0px 2px 20px 0px var(--moderate-blue);
@@ -139,7 +140,67 @@ button {
   width: 100%;
   height: 100%;
   z-index: 9;
-  background-color: var(--light-grayish-blue);
+  background-color: hsl(211deg 10% 45% / 60%);
+}
+
+.delete_agree {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background: var(--White);
+  padding: 30px;
+  border-radius: 10px;
+  width: 39%;
+  display: block;
+}
+
+.delete_agree.disable {
+  display: none;
+}
+
+.delete_agree .title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.delete_agree .delete_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--Grayish-Blue);
+  margin: 20px 0;
+}
+
+.delete_agree .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.delete_agree .buttons button {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 15px 16px;
+  color: var(--White);
+  border-radius: 10px;
+  width: 100%;
+}
+
+.delete_agree .buttons #cancel_btn {
+  background-color: var(--Grayish-Blue);
+}
+
+.delete_agree .buttons #agree_btn {
+  background-color: var(--soft-red);
+}
+
+.delete_agree .buttons #cancel_btn:hover {
+  background-color: var(--Light-gray);
+}
+
+.delete_agree .buttons #agree_btn:hover {
+  background-color: var(--pale-red);
 }
 
 .overlay.disable {
@@ -235,13 +296,10 @@ button {
 
 .container {
   position: relative;
-  width: 100%;
-  padding: 0 15px;
-  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  justify-content: center;
+  gap: 50px;
+  width: 100%;
   align-items: center;
 }
 
@@ -249,8 +307,9 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: center;
   gap: 50px;
+  width: min-content;
 }
 
 @media (max-width: 767px) {
@@ -299,28 +358,84 @@ button {
 
   .admin-commented .comment .buttons {
     position: absolute;
-    bottom: 50px;
+    bottom: 42px;
     right: 20px;
+  }
+  .reply .admin_avatar {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  .reply .reply_text {
+    margin-bottom: 50px;
+  }
+  .reply .reply_push {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 15px;
+  }
+  /*  */
+  .commented,
+  .admin-commented {
+    width: 95% !important;
+  }
+  .commented .admin-commented-clone {
+    width: 98% !important;
+  }
+  .replies {
+    width: 95% !important;
+  }
+  .replies::before {
+    left: -16px !important;
   }
 }
 
-.commented .replys {
+.commented .reply_commented {
   position: relative;
-  display: none;
+  align-items: self-end;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.commented .reply_commented .comment {
+  width: 90%;
 }
 
-.commented .replys.active {
-  display: block;
-}
-
-.commented .replys::before {
+.commented .reply_commented .comment::before {
   content: "";
   position: absolute;
-  left: -15%;
+  left: -30px;
   top: 0;
   width: 4px;
   height: 100%;
   background-color: var(--Light-gray);
+}
+
+.commented .replies {
+  position: relative;
+  display: flex;
+  align-self: self-end;
+  flex-direction: column;
+  gap: 50px;
+  width: 90%;
+}
+.commented .replies .reply {
+  display: none;
+}
+
+.commented .replies::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--Light-gray);
+}
+
+.commented .replies .admin-commented .comment {
+  width: 100%;
 }
 
 .commented .reply {
@@ -340,15 +455,15 @@ button {
   font-size: 18px;
   padding: 14px 18px;
   font-family: inherit;
-  /* height: 100%; */
-  /* width: 100%; */
+  height: 100%;
+  width: 100%;
   outline: none;
   border: 2px solid var(--dark-blue);
   border-radius: 10px;
   resize: none;
 }
 
-.commented .reply #reply_push {
+.commented .reply .reply_push {
   padding: 16px 22px;
   font-size: 16px;
   font-weight: 700;
@@ -357,7 +472,7 @@ button {
   color: var(--White);
 }
 
-.commented .reply #reply_push:hover {
+.commented .reply .reply_push:hover {
   background-color: var(--light-grayish-blue);
 }
 
@@ -679,3 +794,7 @@ button {
   justify-self: flex-end;
   display: none;
 }
+/* =========== */
+/* .reply_commented {
+  width: 80%;
+} */
