@@ -313,6 +313,9 @@ button {
 }
 
 @media (max-width: 767px) {
+  .delete_agree {
+    width: fit-content !important;
+  }
   .admin #username {
     width: 100%;
   }
