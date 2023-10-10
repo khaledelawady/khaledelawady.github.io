@@ -50,7 +50,7 @@ continueBtn.onclick = () => {
   }
 };
 
-if (adminAvatarUpload.src !== window.localStorage.getItem("adminAvatar")) {
+if (window.localStorage.getItem("adminAvatar") !== adminAvatarUpload.src) {
 } else {
   // adding admin avatar to admin comments section
   adminCommentAvatar.forEach((avatar) => {
