@@ -266,6 +266,13 @@ main .project .card.card.calculator {
 main .project .card.card.comments {
   background-color: hsl(238, 40%, 52%);
 }
+main .project .card.card.rock-paper {
+  background: radial-gradient(
+    farthest-corner at 50% 10%,
+    hsl(214, 47%, 23%) 0%,
+    hsl(237, 49%, 15%) 100%
+  );
+}
 main .project .card.card.calculator .info p {
   color: #fff;
 }
