@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="load-page" id="loader-page">
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <main id="main">
+      <div class="container">
+        <div class="score_container">
+          <picture class="score_logo">
+            <img src="./images/logo.svg" alt="logo" />
+          </picture>
+          <div class="score_rate">
+            <span class="score_name">score</span>
+            <span class="score_num"></span>
+          </div>
+        </div>
+        <div class="game_container">
+          <picture>
+            <div class="img-cont paper-cont">
+              <img class="paper" src="./images/icon-paper.svg" alt="paper" />
+            </div>
+            <div class="img-cont scissors-cont">
+              <img
+                class="scissors"
+                src="./images/icon-scissors.svg"
+                alt="scissors" />
+            </div>
+          </picture>
+          <img class="triangle" src="./images/bg-triangle.svg" alt="triangle" />
+          <div class="img-cont rock-cont">
+            <img class="rock" src="./images/icon-rock.svg" alt="rock" />
+          </div>
+        </div>
+        <div class="game_playing_dc desktop active">
+          <div class="my_picked">
+            <h1 class="my_picked_title">you picked</h1>
+            <div class="my_picked_chose">
+              <div class="win"></div>
+            </div>
+          </div>
+          <div class="center">
+            <h1 class="resultw">you win</h1>
+            <h1 class="resultl">you lose</h1>
+            <h1 class="resultd">draw</h1>
+            <button id="play_again">play again</button>
+          </div>
+          <div class="house_picked">
+            <h1 class="house_picked_title">the house picked</h1>
+            <div class="house_picked_chose">
+              <div class="win"></div>
+            </div>
+          </div>
+        </div>
+        <div class="game_playing_mb mobile active">
+          <div class="running_game">
+            <div class="my_picked">
+              <h1 class="my_picked_title">you picked</h1>
+              <div class="my_picked_chose">
+                <div class="win"></div>
+              </div>
+            </div>
+            <div class="house_picked">
+              <h1 class="house_picked_title">the house picked</h1>
+              <div class="house_picked_chose">
+                <div class="win"></div>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <h1 class="resultw">you win</h1>
+            <h1 class="resultl">you lose</h1>
+            <h1 class="resultd">draw</h1>
+            <button id="play_again">play again</button>
+          </div>
+        </div>
+        <button id="rules_btn">rules</button>
+        <div class="overlay"></div>
+        <div class="rules_info">
+          <div class="rules_header">
+            <h1 class="rules-title">rules</h1>
+            <img src="./images/icon-close.svg" alt="close" id="close" />
+          </div>
+          <img src="./images/image-rules.svg" alt="rules" class="rules_img" />
+        </div>
+      </div>
+      <script>
+        const loader = document.getElementById("loader-page");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+      </script>
+      <script src="main.js"></script>
+    </main>
+  </body>
+</html>
